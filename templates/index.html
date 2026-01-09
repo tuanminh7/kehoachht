@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kế hoạch GPA - Khoa học máy tính</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #ffdde1 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #ff758c 0%, #ff7eb3 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 30px;
+            background: #f8f9fa;
+        }
+        
+        .stat-card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .stat-card h3 {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        
+        .stat-card .value {
+            font-size: 32px;
+            font-weight: bold;
+            color: #ff6b9d;
+        }
+        
+        .stat-card .value.success {
+            color: #48bb78;
+        }
+        
+        .stat-card .value.warning {
+            color: #f59e0b;
+        }
+        
+        .controls {
+            padding: 20px 30px;
+            background: #f8f9fa;
+            border-top: 1px solid #e0e0e0;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        
+        .controls button {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .btn-primary {
+            background: #ff6b9d;
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: #ff5a8e;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(255, 107, 157, 0.4);
+        }
+        
+        .btn-secondary {
+            background: #48bb78;
+            color: white;
+        }
+        
+        .btn-secondary:hover {
+            background: #38a169;
+        }
+        
+        .btn-danger {
+            background: #f56565;
+            color: white;
+        }
+        
+        .btn-danger:hover {
+            background: #e53e3e;
+        }
+        
+        .table-container {
+            padding: 30px;
+            overflow-x: auto;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+        }
+        
+        thead {
+            background: #ff6b9d;
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        
+        th {
+            padding: 15px 12px;
+            text-align: left;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 12px;
+            letter-spacing: 0.5px;
+        }
+        
+        tbody tr {
+            border-bottom: 1px solid #e0e0e0;
+            transition: background 0.2s;
+        }
+        
+        tbody tr:hover {
+            background: #f8f9fa;
+        }
+        
+        td {
+            padding: 15px 12px;
+        }
+        
+        .group-header {
+            background: #f1f3f5 !important;
+            font-weight: bold;
+            color: #495057;
+        }
+        
+        .group-header td {
+            padding: 12px;
+        }
+        
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        
+        .badge-must {
+            background: #ffc107;
+            color: #000;
+        }
+        
+        .badge-target {
+            background: #e3f2fd;
+            color: #1976d2;
+        }
+        
+        .badge-min {
+            background: #fff3e0;
+            color: #f57c00;
+        }
+        
+        .badge-completed {
+            background: #c8e6c9;
+            color: #2e7d32;
+            font-weight: bold;
+        }
+        
+        .badge-not-planned {
+            background: #ffccbc;
+            color: #d84315;
+            font-weight: bold;
+        }
+        
+        .badge-pending {
+            background: #f5f5f5;
+            color: #9e9e9e;
+        }
+        
+        .credit {
+            color: #666;
+            font-size: 13px;
+        }
+        
+        input[type="number"] {
+            width: 80px;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 14px;
+            text-align: center;
+            transition: all 0.3s;
+        }
+        
+        input[type="number"]:focus {
+            outline: none;
+            border-color: #ff6b9d;
+            box-shadow: 0 0 0 3px rgba(255, 107, 157, 0.1);
+        }
+        
+        input[type="number"]:hover {
+            border-color: #ff6b9d;
+        }
+        
+        .export-info {
+            padding: 20px 30px;
+            background: #ffe4f1;
+            border-top: 1px solid #ffc2dc;
+            color: #d63384;
+            font-size: 14px;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 40px;
+            font-size: 18px;
+            color: #ff6b9d;
+        }
+        
+        .error {
+            background: #fee;
+            color: #c00;
+            padding: 15px;
+            margin: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .alert {
+            padding: 15px 20px;
+            margin: 20px 30px;
+            border-radius: 8px;
+            display: none;
+        }
+        
+        .alert.success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        
+        .alert.info {
+            background: #d1ecf1;
+            color: #0c5460;
+            border: 1px solid #bee5eb;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1> KẾ HOẠCH GPA - KHOA HỌC MÁY TÍNH 2025 </h1>
+            <p>Mục tiêu: GPA ≥ 3.6 | Tổng: 150 tín chỉ</p>
+        </div>
+        
+        <div id="alert" class="alert"></div>
+        
+        <div class="stats">
+            <div class="stat-card">
+                <h3>GPA Dự tính</h3>
+                <div class="value" id="currentGPA">0.00</div>
+            </div>
+            <div class="stat-card">
+                <h3>GPA Thực tế</h3>
+                <div class="value" id="actualGPA">-</div>
+            </div>
+            <div class="stat-card">
+                <h3>Đã hoàn thành</h3>
+                <div class="value" id="completedCount">0/<span style="font-size: 20px;">62</span></div>
+            </div>
+            <div class="stat-card">
+                <h3>Tổng tín chỉ</h3>
+                <div class="value" id="totalCredits">150</div>
+            </div>
+            <div class="stat-card">
+                <h3>Môn phải A</h3>
+                <div class="value" id="mustACount">38</div>
+            </div>
+            <div class="stat-card">
+                <h3>Trạng thái</h3>
+                <div class="value" id="status" style="font-size: 20px;">-</div>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <button class="btn-primary" onclick="calculateGPA()"> Tính lại GPA</button>
+            <button class="btn-secondary" onclick="saveChanges()"> Lưu thay đổi</button>
+            <button class="btn-danger" onclick="resetToDefault()">↺ Reset về mặc định</button>
+            <button class="btn-primary" onclick="exportToCSV()"> Tải xuống CSV</button>
+            <button class="btn-secondary" onclick="copyToClipboard()"> Copy để dán</button>
+        </div>
+        
+        <div class="table-container">
+            <table id="gpaTable">
+                <thead>
+                    <tr>
+                        <th style="width: 50px">STT</th>
+                        <th style="width: 100px">Mã HP</th>
+                        <th style="min-width: 300px">Tên học phần</th>
+                        <th style="width: 80px">Tín chỉ</th>
+                        <th style="width: 120px">GPA dự tính</th>
+                        <th style="width: 120px">Điểm thực tế</th>
+                        <th style="width: 100px">Trạng thái</th>
+                        <th style="width: 100px">Phải đạt A?</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <tr><td colspan="8" class="loading"> Đang tải dữ liệu...</td></tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="export-info">
+             <strong>Hướng dẫn:</strong> 
+            - Nhập GPA dự tính vào cột "GPA dự tính"
+            - Nhập điểm thực tế vào cột "Điểm thực tế" khi đã hoàn thành môn học
+            - Trạng thái: <strong>✓ Đạt KH</strong> = đạt theo kế hoạch, <strong>✗ Chưa đạt KH</strong> = hoàn thành nhưng chưa đạt kế hoạch
+            - Nhấn "Lưu thay đổi" để lưu vào file JSON (dữ liệu sẽ được giữ lại khi tắt server)
+        </div>
+    </div>
+
+    <script>
+        const API_URL = '/api';
+        let courses = [];
+        let hasChanges = false;
+
+        // Load courses khi trang được tải
+        window.onload = function() {
+            loadCourses();
+        };
+
+        // Load dữ liệu từ backend
+        async function loadCourses() {
+            try {
+                const response = await fetch(`${API_URL}/courses`);
+                courses = await response.json();
+                renderTable();
+                calculateGPA();
+            } catch (error) {
+                document.getElementById('tableBody').innerHTML = 
+                    '<tr><td colspan="8" class="error"> Không thể kết nối với server. Vui lòng kiểm tra backend đã chạy chưa.</td></tr>';
+                console.error('Error loading courses:', error);
+            }
+        }
+
+        // Render bảng
+        function renderTable() {
+            const tbody = document.getElementById('tableBody');
+            tbody.innerHTML = '';
+            let stt = 1;
+            
+            // Group courses by their group name
+            let currentGroup = '';
+            
+            courses.forEach(course => {
+                // Add group header if it's a new group
+                if (course.group !== currentGroup) {
+                    currentGroup = course.group;
+                    const headerRow = document.createElement('tr');
+                    headerRow.className = 'group-header';
+                    headerRow.innerHTML = `<td colspan="8">${course.group}</td>`;
+                    tbody.appendChild(headerRow);
+                }
+                
+                const row = document.createElement('tr');
+                
+                // Xác định trạng thái
+                let statusBadge = '<span class="badge badge-pending">-</span>';
+                if (course.completed && course.actualGPA !== null) {
+                    if (course.actualGPA >= course.target) {
+                        statusBadge = '<span class="badge badge-completed">✓ Đạt KH</span>';
+                    } else {
+                        statusBadge = '<span class="badge badge-not-planned">✗ Chưa đạt KH</span>';
+                    }
+                }
+                
+                row.innerHTML = `
+                    <td>${stt++}</td>
+                    <td><strong>${course.code}</strong></td>
+                    <td>${course.name}</td>
+                    <td><span class="credit">${course.credits} TC</span></td>
+                    <td>
+                        <input type="number" 
+                               min="0" 
+                               max="4" 
+                               step="0.1" 
+                               value="${course.target.toFixed(1)}" 
+                               onchange="updateTarget(${course.id}, this.value)"
+                               class="gpa-input">
+                    </td>
+                    <td>
+                        <input type="number" 
+                               min="0" 
+                               max="4" 
+                               step="0.1" 
+                               value="${course.actualGPA !== null ? course.actualGPA.toFixed(1) : ''}" 
+                               placeholder="-"
+                               onchange="updateActualGPA(${course.id}, this.value)"
+                               class="gpa-input">
+                    </td>
+                    <td>${statusBadge}</td>
+                    <td>${course.mustA ? '<span class="badge badge-must">BẮT BUỘC A</span>' : '-'}</td>
+                `;
+                tbody.appendChild(row);
+            });
+        }
+
+        // Cập nhật GPA dự tính của một môn
+        function updateTarget(courseId, newTarget) {
+            const course = courses.find(c => c.id === courseId);
+            if (course) {
+                course.target = parseFloat(newTarget);
+                hasChanges = true;
+                showAlert('Đã thay đổi! Nhấn "Lưu thay đổi" để cập nhật vào server.', 'info');
+                calculateGPA();
+            }
+        }
+
+        // Cập nhật điểm thực tế của một môn
+        function updateActualGPA(courseId, actualGPA) {
+            const course = courses.find(c => c.id === courseId);
+            if (course) {
+                if (actualGPA === '' || actualGPA === null) {
+                    course.actualGPA = null;
+                    course.completed = false;
+                } else {
+                    course.actualGPA = parseFloat(actualGPA);
+                    course.completed = true;
+                }
+                hasChanges = true;
+                renderTable();  // Re-render để cập nhật trạng thái
+                calculateGPA();
+                showAlert('Đã thay đổi điểm thực tế! Nhấn "Lưu thay đổi" để cập nhật.', 'info');
+            }
+        }
+
+        // Lưu thay đổi lên server
+        async function saveChanges() {
+            if (!hasChanges) {
+                showAlert('Không có thay đổi nào để lưu!', 'info');
+                return;
+            }
+
+            try {
+                // Gọi API save để lưu vào file JSON
+                const response = await fetch(`${API_URL}/save`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    }
+                });
+                
+                const result = await response.json();
+                
+                if (result.success) {
+                    hasChanges = false;
+                    showAlert(` ${result.message} (${result.timestamp})`, 'success');
+                    calculateGPA();
+                } else {
+                    showAlert(' Lỗi khi lưu dữ liệu!', 'error');
+                }
+            } catch (error) {
+                showAlert(' Lỗi khi lưu dữ liệu!', 'error');
+                console.error('Error saving changes:', error);
+            }
+        }
+
+        // Tính GPA tổng
+        async function calculateGPA() {
+            try {
+                const response = await fetch(`${API_URL}/calculate-gpa`);
+                const data = await response.json();
+                
+                document.getElementById('currentGPA').textContent = data.overall_gpa.toFixed(2);
+                document.getElementById('totalCredits').textContent = data.total_credits;
+                document.getElementById('mustACount').textContent = data.must_a_count;
+                document.getElementById('completedCount').innerHTML = `${data.completed_count}/<span style="font-size: 20px;">62</span>`;
+                
+                // Hiển thị GPA thực tế
+                const actualGPAElement = document.getElementById('actualGPA');
+                if (data.actual_credits > 0) {
+                    actualGPAElement.textContent = data.actual_gpa.toFixed(2);
+                    if (data.actual_gpa >= 3.6) {
+                        actualGPAElement.className = 'value success';
+                    } else {
+                        actualGPAElement.className = 'value warning';
+                    }
+                } else {
+                    actualGPAElement.textContent = '-';
+                    actualGPAElement.className = 'value';
+                }
+                
+                const statusElement = document.getElementById('status');
+                const gpaElement = document.getElementById('currentGPA');
+                
+                if (data.target_reached) {
+                    statusElement.textContent = ' ĐẠT';
+                    statusElement.className = 'value success';
+                    gpaElement.className = 'value success';
+                } else {
+                    const gap = (3.6 - data.overall_gpa).toFixed(2);
+                    statusElement.textContent = `⚠️ Thiếu ${gap}`;
+                    statusElement.className = 'value warning';
+                    gpaElement.className = 'value warning';
+                }
+                
+                // Hiển thị cảnh báo nếu có môn không đạt kế hoạch
+                if (data.not_as_planned_count > 0) {
+                    showAlert(`⚠️ Có ${data.not_as_planned_count} môn chưa đạt theo kế hoạch!`, 'info');
+                }
+            } catch (error) {
+                console.error('Error calculating GPA:', error);
+            }
+        }
+
+        // Reset về mặc định
+        async function resetToDefault() {
+            if (!confirm('Bạn có chắc muốn reset tất cả về giá trị mặc định?')) {
+                return;
+            }
+
+            try {
+                const response = await fetch(`${API_URL}/reset`, {
+                    method: 'POST'
+                });
+                const data = await response.json();
+                
+                if (data.success) {
+                    await loadCourses();
+                    hasChanges = false;
+                    showAlert(' Đã reset về giá trị mặc định!', 'success');
+                }
+            } catch (error) {
+                showAlert(' Lỗi khi reset dữ liệu!', 'error');
+                console.error('Error resetting:', error);
+            }
+        }
+
+        // Export to CSV
+        function exportToCSV() {
+            let csv = 'STT,Mã HP,Tên học phần,Tín chỉ,GPA dự tính,Điểm thực tế,Trạng thái,Phải đạt A\n';
+            let stt = 1;
+            let currentGroup = '';
+            
+            courses.forEach(course => {
+                if (course.group !== currentGroup) {
+                    currentGroup = course.group;
+                    csv += `"${course.group}",,,,,,\n`;
+                }
+                
+                let status = '-';
+                if (course.completed && course.actualGPA !== null) {
+                    status = course.actualGPA >= course.target ? 'Đạt KH' : 'Chưa đạt KH';
+                }
+                
+                const actualGPA = course.actualGPA !== null ? course.actualGPA : '-';
+                csv += `${stt++},"${course.code}","${course.name}",${course.credits},${course.target},${actualGPA},"${status}","${course.mustA ? 'BẮT BUỘC' : 'Không'}"\n`;
+            });
+            
+            const blob = new Blob(['\uFEFF' + csv], { type: 'text/csv;charset=utf-8;' });
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(blob);
+            link.download = 'ke_hoach_gpa_khoa_hoc_may_tinh.csv';
+            link.click();
+            showAlert('✅ Đã tải xuống file CSV!', 'success');
+        }
+
+        // Copy to clipboard
+        function copyToClipboard() {
+            let text = 'STT\tMã HP\tTên học phần\tTín chỉ\tGPA dự tính\tĐiểm thực tế\tTrạng thái\tPhải đạt A\n';
+            let stt = 1;
+            let currentGroup = '';
+            
+            courses.forEach(course => {
+                if (course.group !== currentGroup) {
+                    currentGroup = course.group;
+                    text += `${course.group}\t\t\t\t\t\t\t\n`;
+                }
+                
+                let status = '-';
+                if (course.completed && course.actualGPA !== null) {
+                    status = course.actualGPA >= course.target ? 'Đạt KH' : 'Chưa đạt KH';
+                }
+                
+                const actualGPA = course.actualGPA !== null ? course.actualGPA : '-';
+                text += `${stt++}\t${course.code}\t${course.name}\t${course.credits}\t${course.target}\t${actualGPA}\t${status}\t${course.mustA ? 'BẮT BUỘC' : 'Không'}\n`;
+            });
+            
+            navigator.clipboard.writeText(text).then(() => {
+                showAlert(' Đã copy! Mở Google Sheets và nhấn Ctrl+V để dán.', 'success');
+            });
+        }
+
+        // Show alert message
+        function showAlert(message, type) {
+            const alert = document.getElementById('alert');
+            alert.textContent = message;
+            alert.className = `alert ${type}`;
+            alert.style.display = 'block';
+            
+            setTimeout(() => {
+                alert.style.display = 'none';
+            }, 3000);
+        }
+
+        // Warning before leaving if there are unsaved changes
+        window.addEventListener('beforeunload', function (e) {
+            if (hasChanges) {
+                e.preventDefault();
+                e.returnValue = '';
+            }
+        });
+    </script>
+</body>
+</html>
