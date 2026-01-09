@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hệ thống Quản lý Học tập - KHMT 2025</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+            padding: 20px;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('/static/images/nen.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            z-index: -1;
+        }
+
+        body::after {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.2);
+            z-index: -1;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 50px;
+            padding: 30px 0;
+            text-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+            animation: fadeInDown 0.8s ease;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            font-weight: 900;
+            letter-spacing: 2px;
+            background: linear-gradient(135deg, #fff 0%, #a8edea 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        header p {
+            font-size: 1.3em;
+            font-weight: 600;
+        }
+
+        /* Info Panel - Top Right */
+        .info-panel {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        .info-button {
+            padding: 12px 24px;
+            background: rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(20px);
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            border-radius: 25px;
+            color: white;
+            font-size: 1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .info-button:hover {
+            background: rgba(255, 255, 255, 0.35);
+            transform: translateY(-2px);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
+        }
+
+        .info-button.active {
+            background: rgba(255, 255, 255, 0.4);
+        }
+
+        .info-content {
+            position: absolute;
+            top: 60px;
+            right: 0;
+            width: 450px;
+            max-height: 80vh;
+            overflow-y: auto;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(25px);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 20px;
+            padding: 25px;
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.4);
+            display: none;
+            animation: slideDown 0.4s ease;
+        }
+
+        .info-content.active {
+            display: block;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .info-content h3 {
+            color: white;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: 800;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .features-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .feature-item {
+            padding: 18px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-left: 4px solid rgba(255, 255, 255, 0.6);
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .feature-item:hover {
+            transform: translateX(5px);
+            background: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .feature-item strong {
+            color: #ffffff;
+            display: block;
+            margin-bottom: 8px;
+            font-size: 1.05em;
+            text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+        }
+
+        .feature-item p {
+            color: rgba(255, 255, 255, 0.9);
+            line-height: 1.5;
+            font-size: 0.9em;
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Floating Menu */
+        .floating-menu {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 1000;
+        }
+
+        .menu-button {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(20px);
+            border: 3px solid rgba(255, 255, 255, 0.5);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4),
+                        inset 0 2px 10px rgba(255, 255, 255, 0.3);
+            cursor: move;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5em;
+            transition: all 0.3s ease;
+            user-select: none;
+            position: relative;
+        }
+
+        .menu-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.5);
+        }
+
+        .menu-button.active {
+            transform: scale(1.1) rotate(90deg);
+        }
+
+        .menu-items {
+            position: absolute;
+            top: 100px;
+            right: 0;
+            display: none;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .menu-items.active {
+            display: flex;
+            animation: menuAppear 0.4s ease;
+        }
+
+        @keyframes menuAppear {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .menu-item {
+            width: 280px;
+            padding: 20px 25px;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(20px);
+            border-radius: 20px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .menu-item:hover {
+            background: rgba(255, 255, 255, 0.25);
+            transform: translateX(-10px) scale(1.05);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .menu-item-icon {
+            font-size: 2em;
+            flex-shrink: 0;
+        }
+
+        .menu-item-content h3 {
+            margin: 0 0 5px 0;
+            font-size: 1.1em;
+            font-weight: 700;
+        }
+
+        .menu-item-content p {
+            margin: 0;
+            font-size: 0.85em;
+            opacity: 0.9;
+        }
+
+        .menu-badge {
+            background: rgba(255, 255, 255, 0.3);
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: 0.75em;
+            margin-top: 5px;
+            display: inline-block;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            color: white;
+            padding: 20px;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+            font-weight: 500;
+            background: rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+        }
+
+        /* Scrollbar styling */
+        .info-content::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .info-content::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+
+        .info-content::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 10px;
+        }
+
+        .info-content::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.5);
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            .info-panel {
+                top: 15px;
+                right: 15px;
+            }
+
+            .info-button {
+                padding: 10px 18px;
+                font-size: 0.9em;
+            }
+
+            .info-content {
+                width: calc(100vw - 40px);
+                right: -10px;
+            }
+
+            .floating-menu {
+                bottom: 20px;
+                right: 20px;
+            }
+
+            .menu-button {
+                width: 70px;
+                height: 70px;
+                font-size: 2em;
+            }
+
+            .menu-items {
+                top: 90px;
+            }
+
+            .menu-item {
+                width: 250px;
+                padding: 15px 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.6em;
+            }
+
+            header p {
+                font-size: 1em;
+            }
+
+            .menu-item {
+                width: calc(100vw - 100px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Hệ thống Quản lý Học tập-Minh Tuan</h1>
+            <p>Khoa học Máy tính - Khóa 2025</p>
+        </header>
+
+        <footer>
+            <p>© 2026 TOANPRO - Hệ thống Quản lý Học tập KHMT</p>
+            <p>Powered by Flask, Gemini AI & Chart.js</p>
+        </footer>
+    </div>
+
+    <!-- Info Panel - Top Right -->
+    <div class="info-panel">
+        <button class="info-button" id="infoButton">
+            Tính năng nổi bật
+        </button>
+        <div class="info-content" id="infoContent">
+            <h3>Tính năng nổi bật</h3>
+            <div class="features-list">
+                <div class="feature-item">
+                    <strong>Quản lý môn học</strong>
+                    <p>Đặt điểm mục tiêu, đánh dấu hoàn thành và cập nhật điểm thực tế</p>
+                </div>
+                <div class="feature-item">
+                    <strong>Tính toán GPA</strong>
+                    <p>Tự động tính GPA tổng, GPA theo nhóm và theo dõi mục tiêu 3.6+</p>
+                </div>
+                <div class="feature-item">
+                    <strong>AI Tóm tắt</strong>
+                    <p>Gemini 2.5 phân tích PDF và tóm tắt nội dung chính của bài học</p>
+                </div>
+                <div class="feature-item">
+                    <strong>Tạo đề thi</strong>
+                    <p>Tự động sinh câu hỏi trắc nghiệm ABCD từ tài liệu học</p>
+                </div>
+                <div class="feature-item">
+                    <strong>Chấm điểm tự động</strong>
+                    <p>Nộp bài và nhận kết quả ngay lập tức với giải thích chi tiết</p>
+                </div>
+                <div class="feature-item">
+                    <strong>Biểu đồ trực quan</strong>
+                    <p>Chart.js hiển thị điểm số, xu hướng và phân tích học tập</p>
+                </div>
+                <div class="feature-item">
+                    <strong>Lưu trữ dữ liệu</strong>
+                    <p>Toàn bộ dữ liệu được lưu vào JSON, dễ dàng backup</p>
+                </div>
+                <div class="feature-item">
+                    <strong>Giao diện thân thiện</strong>
+                    <p>Responsive design, hoạt động tốt trên mọi thiết bị</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Menu -->
+    <div class="floating-menu" id="floatingMenu">
+        <div class="menu-button" id="menuButton">
+            ☰
+        </div>
+        <div class="menu-items" id="menuItems">
+            <a href="/gpa-planner" class="menu-item">
+                <span class="menu-item-icon"></span>
+                <div class="menu-item-content">
+                    <h3>Kế hoạch GPA</h3>
+                    <p>Quản lý và theo dõi điểm</p>
+                    <span class="menu-badge">62 môn học</span>
+                </div>
+            </a>
+            <a href="/learning" class="menu-item">
+                <span class="menu-item-icon"></span>
+                <div class="menu-item-content">
+                    <h3>AI Learning</h3>
+                    <p>Tóm tắt & tạo đề thi</p>
+                    <span class="menu-badge">Gemini AI</span>
+                </div>
+            </a>
+            <a href="/learning-stats" class="menu-item">
+                <span class="menu-item-icon"></span>
+                <div class="menu-item-content">
+                    <h3>Thống kê</h3>
+                    <p>Biểu đồ và phân tích</p>
+                    <span class="menu-badge">Visualize</span>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Info Panel Toggle
+        const infoButton = document.getElementById('infoButton');
+        const infoContent = document.getElementById('infoContent');
+
+        infoButton.addEventListener('click', (e) => {
+            e.stopPropagation();
+            infoButton.classList.toggle('active');
+            infoContent.classList.toggle('active');
+        });
+
+        // Close info panel when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.info-panel')) {
+                infoButton.classList.remove('active');
+                infoContent.classList.remove('active');
+            }
+        });
+
+        // Menu functionality
+        const menuButton = document.getElementById('menuButton');
+        const menuItems = document.getElementById('menuItems');
+        const floatingMenu = document.getElementById('floatingMenu');
+
+        menuButton.addEventListener('click', (e) => {
+            e.stopPropagation();
+            menuButton.classList.toggle('active');
+            menuItems.classList.toggle('active');
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!floatingMenu.contains(e.target)) {
+                menuButton.classList.remove('active');
+                menuItems.classList.remove('active');
+            }
+        });
+
+        // Draggable functionality
+        let isDragging = false;
+        let startX, startY, startLeft, startTop;
+
+        menuButton.addEventListener('mousedown', (e) => {
+            if (e.button === 0) {
+                isDragging = true;
+                startX = e.clientX;
+                startY = e.clientY;
+                const rect = floatingMenu.getBoundingClientRect();
+                startLeft = rect.left;
+                startTop = rect.top;
+                menuButton.style.cursor = 'grabbing';
+            }
+        });
+
+        document.addEventListener('mousemove', (e) => {
+            if (isDragging) {
+                const deltaX = e.clientX - startX;
+                const deltaY = e.clientY - startY;
+                
+                let newLeft = startLeft + deltaX;
+                let newTop = startTop + deltaY;
+                
+                newLeft = Math.max(0, Math.min(window.innerWidth - 80, newLeft));
+                newTop = Math.max(0, Math.min(window.innerHeight - 80, newTop));
+                
+                floatingMenu.style.left = newLeft + 'px';
+                floatingMenu.style.top = newTop + 'px';
+                floatingMenu.style.right = 'auto';
+                floatingMenu.style.bottom = 'auto';
+            }
+        });
+
+        document.addEventListener('mouseup', () => {
+            if (isDragging) {
+                isDragging = false;
+                menuButton.style.cursor = 'move';
+            }
+        });
+
+        // Touch support
+        menuButton.addEventListener('touchstart', (e) => {
+            const touch = e.touches[0];
+            isDragging = true;
+            startX = touch.clientX;
+            startY = touch.clientY;
+            const rect = floatingMenu.getBoundingClientRect();
+            startLeft = rect.left;
+            startTop = rect.top;
+        });
+
+        document.addEventListener('touchmove', (e) => {
+            if (isDragging) {
+                const touch = e.touches[0];
+                const deltaX = touch.clientX - startX;
+                const deltaY = touch.clientY - startY;
+                
+                let newLeft = startLeft + deltaX;
+                let newTop = startTop + deltaY;
+                
+                newLeft = Math.max(0, Math.min(window.innerWidth - 80, newLeft));
+                newTop = Math.max(0, Math.min(window.innerHeight - 80, newTop));
+                
+                floatingMenu.style.left = newLeft + 'px';
+                floatingMenu.style.top = newTop + 'px';
+                floatingMenu.style.right = 'auto';
+                floatingMenu.style.bottom = 'auto';
+            }
+        });
+
+        document.addEventListener('touchend', () => {
+            isDragging = false;
+        });
+    </script>
+</body>
+</html>

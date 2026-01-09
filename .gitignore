@@ -1,0 +1,22 @@
+```
+# Environment variables
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Flask
+instance/
+.pytest_cache/
+
+# IDE
+.vscode/
+.idea/
+
+# Uploads (nếu không muốn đẩy ảnh lên git)
+
+# Data files (tùy chọn)
+
+```

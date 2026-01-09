@@ -1,27 +1,27 @@
-# 🌸 Hệ thống Quản lý Kế hoạch GPA - Khoa học máy tính 🌸
+# Hệ thống Quản lý Kế hoạch GPA - Khoa học máy tính
 
-## 📋 Mô tả
+## Mô tả
 Web application màu hồng dễ thương giúp sinh viên ngành Khoa học máy tính quản lý và tính toán GPA của 150 tín chỉ trong chương trình học.
 
-## ✨ Tính năng
-- ✅ Hiển thị tất cả các môn học (150 tín chỉ)
-- ✅ Điều chỉnh GPA dự tính cho từng môn học
-- ✅ Nhập điểm thực tế khi hoàn thành môn
-- ✅ Theo dõi trạng thái: ✓ Đạt kế hoạch / ✗ Chưa đạt kế hoạch / - Chưa hoàn thành
-- ✅ Tự động tính toán GPA tổng thể (dự tính & thực tế)
-- ✅ Hiển thị trạng thái đạt/không đạt mục tiêu (GPA ≥ 3.6)
-- ✅ **Lưu dữ liệu vào file JSON** - Dữ liệu không mất khi tắt server!
-- ✅ Reset về giá trị mặc định
-- ✅ Export dữ liệu ra CSV
-- ✅ Copy dữ liệu để dán vào Google Sheets
+## Tính năng
+- Hiển thị tất cả các môn học (150 tín chỉ)
+- Điều chỉnh GPA dự tính cho từng môn học
+- Nhập điểm thực tế khi hoàn thành môn
+- Theo dõi trạng thái: Đạt kế hoạch / Chưa đạt kế hoạch / Chưa hoàn thành
+- Tự động tính toán GPA tổng thể (dự tính & thực tế)
+- Hiển thị trạng thái đạt/không đạt mục tiêu (GPA ≥ 3.6)
+- **Lưu dữ liệu vào file JSON** - Dữ liệu không mất khi tắt server!
+- Reset về giá trị mặc định
+- Export dữ liệu ra CSV
+- Copy dữ liệu để dán vào Google Sheets
 
-## 💾 Lưu trữ dữ liệu
+## Lưu trữ dữ liệu
 Dữ liệu được lưu trong file **`courses_data.json`** tại thư mục gốc của project:
 - **Tự động load** khi khởi động server
 - **Ghi đè hoàn toàn** khi bấm "Lưu thay đổi"
 - **Xóa file** khi bấm "Reset về mặc định"
 
-## 🛠️ Cài đặt
+## Cài đặt
 
 ### Yêu cầu
 - Python 3.7+
@@ -61,18 +61,18 @@ Server sẽ chạy tại: `http://localhost:5000`
 Bạn sẽ thấy:
 ```
 ============================================================
-🌸 KẾ HOẠCH GPA - KHOA HỌC MÁY TÍNH 2025 🌸
+KẾ HOẠCH GPA - KHOA HỌC MÁY TÍNH 2025
 ============================================================
-🚀 Server đang chạy tại: http://localhost:5000
-📊 Mở trình duyệt và truy cập: http://localhost:5000
-💾 Dữ liệu được lưu trong file: courses_data.json
+Server đang chạy tại: http://localhost:5000
+Mở trình duyệt và truy cập: http://localhost:5000
+Dữ liệu được lưu trong file: courses_data.json
 ============================================================
 ```
 
 #### 4. Mở Trình duyệt
 Truy cập: `http://localhost:5000`
-
-## 📖 Hướng dẫn sử dụng
+or: https://kehoachht.onrender.com
+## Hướng dẫn sử dụng
 
 ### 1. Nhập kế hoạch GPA
 - Nhập GPA dự tính vào cột "GPA dự tính" cho mỗi môn
@@ -83,10 +83,10 @@ Truy cập: `http://localhost:5000`
 - Hệ thống tự động:
   - Đánh dấu môn đã hoàn thành
   - So sánh với kế hoạch
-  - Hiển thị trạng thái: ✓ Đạt KH hoặc ✗ Chưa đạt KH
+  - Hiển thị trạng thái: Đạt KH hoặc Chưa đạt KH
 
 ### 3. Lưu thay đổi
-- Nhấn nút **"💾 Lưu thay đổi"**
+- Nhấn nút **"Lưu thay đổi"**
 - Dữ liệu sẽ được ghi vào file `courses_data.json`
 - Dữ liệu sẽ được giữ lại khi tắt/bật server
 
@@ -94,27 +94,26 @@ Truy cập: `http://localhost:5000`
 - **GPA Dự tính**: GPA nếu đạt theo kế hoạch
 - **GPA Thực tế**: GPA từ các môn đã hoàn thành
 - **Đã hoàn thành**: X/62 môn
-- **Trạng thái**: ✅ ĐẠT hoặc ⚠️ Thiếu X điểm
+- **Trạng thái**: ĐẠT hoặc Thiếu X điểm
 
 ### 5. Reset về mặc định
-- Nhấn nút **"↺ Reset về mặc định"**
+- Nhấn nút **"Reset về mặc định"**
 - Tất cả dữ liệu về giá trị ban đầu
 - File JSON sẽ bị xóa
 
 ### 6. Export dữ liệu
-- **Tải CSV**: Nhấn **"📥 Tải xuống CSV"**
-- **Copy**: Nhấn **"📋 Copy để dán"** → Paste vào Google Sheets (Ctrl+V)
+- **Tải CSV**: Nhấn **"Tải xuống CSV"**
+- **Copy**: Nhấn **"Copy để dán"** → Paste vào Google Sheets (Ctrl+V)
 
-## 🎨 Giao diện
+## Giao diện
 
 Giao diện màu **hồng pastel** dễ thương với:
 - Background gradient hồng
 - Header màu hồng đậm
 - Buttons màu hồng với hover effect
-- Emoji hoa sakura 🌸
 - Stat cards với số liệu màu hồng
 
-## 🎯 API Endpoints
+## API Endpoints
 
 ### GET /
 Serve trang web frontend
@@ -179,7 +178,7 @@ Reset về dữ liệu mặc định và xóa file JSON
 ### GET /api/statistics
 Lấy thống kê theo nhóm môn
 
-## 📊 Cấu trúc dữ liệu
+## Cấu trúc dữ liệu
 
 ### File courses_data.json
 ```json
@@ -207,7 +206,7 @@ Lấy thống kê theo nhóm môn
 - `mustA`: Môn bắt buộc đạt A (38 môn)
 - `credits`: Số tín chỉ
 
-## 🔧 Troubleshooting
+## Troubleshooting
 
 ### Lỗi: Cannot connect to server
 - Kiểm tra backend đã chạy: `python app.py`
@@ -226,27 +225,27 @@ Lấy thống kê theo nhóm môn
 - Copy file `courses_data.json` ra nơi khác
 - Hoặc dùng nút "Export CSV"
 
-## 🚀 Tính năng có thể thêm
+## Tính năng có thể thêm
 
-- [ ] Biểu đồ trực quan (Chart.js)
-- [ ] Lọc và tìm kiếm môn học
-- [ ] Kế hoạch theo học kỳ
-- [ ] Gợi ý thông minh
-- [ ] Dark mode 🌙
-- [ ] Mobile responsive
-- [ ] Multiple users (login system)
-- [ ] Export PDF report
+- Biểu đồ trực quan (Chart.js)
+- Lọc và tìm kiếm môn học
+- Kế hoạch theo học kỳ
+- Gợi ý thông minh
+- Dark mode
+- Mobile responsive
+- Multiple users (login system)
+- Export PDF report
 
-## 💡 Tips
+## Tips
 
 1. **Backup thường xuyên**: Copy file `courses_data.json` để backup
 2. **Sử dụng CSV**: Export CSV để mở trong Excel/Google Sheets
 3. **Theo dõi tiến độ**: Cập nhật điểm ngay sau khi thi để theo dõi GPA thực tế
-4. **Cảnh báo sớm**: Nếu có môn "✗ Chưa đạt KH", hãy cố gắng cải thiện môn tiếp theo
+4. **Cảnh báo sớm**: Nếu có môn "Chưa đạt KH", hãy cố gắng cải thiện môn tiếp theo
 
-## 📝 License
+## License
 MIT License
 
-## 👨‍💻 Tác giả
+## Tác giả
 Hệ thống quản lý kế hoạch GPA cho sinh viên Khoa học máy tính
-Phiên bản: 2.0 - JSON Storage Edition 🌸
+Phiên bản: 2.0 - JSON Storage Edition

@@ -1,0 +1,799 @@
+{
+  "sessions": [
+    {
+      "id": 1,
+      "course_code": "test1",
+      "course_name": "python",
+      "upload_time": "2026-01-10 01:44:50",
+      "summary": "Bài học \"Phòng chống chiến lược “diễn biến hòa bình”, bạo loạn lật đổ của các thế lực thù địch đối với cách mạng Việt Nam\" trang bị những kiến thức cơ bản về các mối đe dọa chiến lược nhằm vào cách mạng Việt Nam và chủ nghĩa xã hội. Nội dung chính tập trung vào việc làm rõ khái niệm, quá trình hình thành, âm mưu, thủ đoạn của chiến lược “Diễn biến hòa bình” (DBHB) và “Bạo loạn lật đổ” (BLLĐ), cũng như tầm quan trọng của việc nhận diện và phòng chống chúng.\n\n**“Diễn biến hòa bình” (DBHB)** được định nghĩa là chiến lược cơ bản của chủ nghĩa đế quốc và các thế lực phản động, sử dụng các biện pháp **phi quân sự** để lật đổ chế độ chính trị của các nước tiến bộ, đặc biệt là các nước xã hội chủ nghĩa. Chiến lược này được hình thành và phát triển qua hai giai đoạn chính:\n1.  **Giai đoạn 1 (1945 – 1980): Manh nha hình thành.** Bắt nguồn từ Mỹ sau Chiến tranh thế giới thứ hai với chiến lược “ngăn chặn CNCS”. Các khái niệm như “Phương pháp hòa bình” (1953) và “Cây gậy và củ cà rốt” (1970) xuất hiện. Các tổng thống Mỹ tiêu biểu trong giai đoạn này là:\n    *   **John F. Kennedy (1961):** Đề ra “Chiến lược phản ứng linh hoạt”, kết hợp “cứng rắn bằng sức mạnh quân sự” với “mềm dẻo bằng các biện pháp hòa bình”, góp phần hình thành nên tên gọi DBHB.\n    *   **Richard Nixon (1969):** Thay thế bằng “Chiến lược răn đe thực tế”, nhấn mạnh răn đe hạt nhân nhưng đồng thời sử dụng tiếp xúc hòa hoãn để thẩm thấu tư tưởng, văn hóa, tác động kinh tế, phá hoại quốc phòng, an ninh và gieo rắc chống phá từ bên trong.\n2.  **Giai đoạn 2 (1980 đến nay): Phát triển và hoàn thiện.** Chiến lược DBHB đạt đến đỉnh cao khi góp phần lật đổ các nước Đông Âu và Liên Xô (1980-1990), và tiếp tục là chiến lược cơ bản nhằm vào các nước xã hội chủ nghĩa còn lại. Các tổng thống Mỹ sau này tiếp tục phát triển chiến lược:\n    *   **Ronald Reagan (1981):** Xây dựng “Học thuyết xung đột cường độ thấp”, tăng cường can thiệp vào các nước tiến bộ.\n    *   **George H.W. Bush (1989):** Chuyển từ chiến lược “Ngăn chặn” sang “Vượt trên ngăn chặn”, trong đó DBHB là linh hồn.\n    *   **Barack Obama (2009):** Phát triển chiến lược quốc phòng phối hợp “Sức mạnh mềm” bên cạnh quân sự, chú trọng giúp phát triển kinh tế, chính trị, xã hội tại các khu vực bất ổn, thay vì ưu tiên đánh phủ đầu.\n\nSong hành với DBHB là **“Bạo loạn lật đổ” (BLLĐ)**, một thủ đoạn gắn liền và thường là sự leo thang của DBHB. BLLĐ là hành động chống phá bằng **bạo lực** do các lực lượng phản động, ly khai, đối lập thực hiện, nhằm gây rối loạn an ninh, trật tự hoặc lật đổ chính quyền. Các hình thức bạo loạn bao gồm bạo loạn chính trị, bạo loạn vũ trang hoặc kết hợp cả hai, với quy mô từ nhỏ đến lớn, xảy ra ở nhiều nơi, đặc biệt là các trung tâm kinh tế, chính trị, văn hóa quan trọng.\n\nBài học cũng đề cập đến **bốn nguy cơ** mà Đảng ta đã nhận diện tại Hội nghị giữa nhiệm kỳ Khóa VII (01/1994): chệch hướng xã hội chủ nghĩa, tụt hậu về kinh tế, tham nhũng và diễn biến hòa bình. Việc nắm vững những kiến thức này giúp nhận biết các biểu hiện của DBHB, BLLĐ, từ đó nâng cao tinh thần cảnh giác cách mạng và góp phần làm thất bại âm mưu chống phá của kẻ thù, bảo vệ vững chắc độc lập, chủ quyền và chế độ xã hội chủ nghĩa của Việt Nam.",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Chiến lược \"Diễn biến hòa bình\" (DBHB) được định nghĩa là gì?",
+          "options": [
+            "A. Chiến lược quân sự nhằm đánh chiếm lãnh thổ của các nước đối lập.",
+            "B. Chiến lược cơ bản của chủ nghĩa đế quốc và các thế lực phản động, sử dụng biện pháp phi quân sự để lật đổ chế độ chính trị.",
+            "C. Chiến lược hợp tác kinh tế để hội nhập các nước xã hội chủ nghĩa vào hệ thống tư bản.",
+            "D. Chiến lược ngoại giao nhằm giải quyết các xung đột quốc tế một cách hòa bình."
+          ],
+          "correct": 1,
+          "explanation": "Khái niệm DBHB nhấn mạnh việc sử dụng biện pháp phi quân sự để lật đổ chế độ chính trị của các nước tiến bộ, đặc biệt là các nước xã hội chủ nghĩa."
+        },
+        {
+          "id": 2,
+          "question": "Quá trình hình thành và phát triển của chiến lược \"Diễn biến hòa bình\" được chia thành mấy giai đoạn chính?",
+          "options": [
+            "A. 1 giai đoạn",
+            "B. 2 giai đoạn",
+            "C. 3 giai đoạn",
+            "D. 4 giai đoạn"
+          ],
+          "correct": 1,
+          "explanation": "Bài học chỉ rõ quá trình hình thành DBHB có hai giai đoạn chính: 1945-1980 (manh nha hình thành) và 1980 đến nay (phát triển và hoàn thiện)."
+        },
+        {
+          "id": 3,
+          "question": "“Diễn biến hòa bình” bắt nguồn từ quốc gia nào sau Chiến tranh thế giới thứ 2?",
+          "options": [
+            "A. Liên Xô",
+            "B. Trung Quốc",
+            "C. Mỹ",
+            "D. Anh"
+          ],
+          "correct": 2,
+          "explanation": "Theo bài học, chiến lược DBHB bắt nguồn từ Mỹ sau Chiến tranh thế giới thứ 2, với chiến lược \"ngăn chặn CNCS\" vào tháng 3/1947."
+        },
+        {
+          "id": 4,
+          "question": "Tổng thống Mỹ John F. Kennedy đã đưa ra \"Chiến lược phản ứng linh hoạt\" vào thời điểm nào, và nội dung chính của chiến lược này là gì?",
+          "options": [
+            "A. Tháng 01/1969, tập trung răn đe hạt nhân và tiếp xúc hòa hoãn.",
+            "B. Tháng 01/1961, giữ thái độ cứng rắn bằng sức mạnh quân sự và mềm dẻo bằng các biện pháp hòa bình.",
+            "C. Tháng 01/1981, khôi phục sức mạnh kinh tế-quân sự.",
+            "D. Tháng 05/1989, tuyên bố kết thúc chiến lược \"Ngăn chặn\"."
+          ],
+          "correct": 1,
+          "explanation": "Kennedy nhậm chức tháng 01/1961 và đưa ra \"Chiến lược phản ứng linh hoạt\" với chủ trương \"cứng rắn bằng sức mạnh quân sự, vừa có thái độ mềm dẻo bằng các biện pháp hòa bình\", hình thành nên tên gọi DBHB."
+        },
+        {
+          "id": 5,
+          "question": "Chiến lược \"Răn đe thực tế\" và \"Cây gậy và củ cà rốt\" gắn liền với Tổng thống Mỹ nào?",
+          "options": [
+            "A. John F. Kennedy",
+            "B. Richard Nixon",
+            "C. Ronald Reagan",
+            "D. George H.W. Bush"
+          ],
+          "correct": 1,
+          "explanation": "Richard Nixon (nhậm chức 1969) đã thay thế chiến lược \"Phản ứng linh hoạt\" bằng \"Răn đe thực tế\" và đưa ra chiến lược \"Cây gậy và củ cà rốt\" vào năm 1970."
+        },
+        {
+          "id": 6,
+          "question": "Mục đích chính của chiến lược \"Răn đe thực tế\" dưới thời Tổng thống Richard Nixon trong bối cảnh \"Diễn biến hòa bình\" là gì?",
+          "options": [
+            "A. Phát triển kinh tế song phương với các nước xã hội chủ nghĩa.",
+            "B. Coi trọng răn đe hạt nhân, lấy tiếp xúc hòa hoãn để thẩm thấu tư tưởng và văn hóa, tác động vào kinh tế, phá hoại quốc phòng, an ninh từ bên trong.",
+            "C. Mở rộng hợp tác quân sự để đối phó với các cuộc xung đột cục bộ.",
+            "D. Hỗ trợ các nước xã hội chủ nghĩa trong quá trình dân chủ hóa."
+          ],
+          "correct": 1,
+          "explanation": "Nixon chủ trương \"coi trọng răn đe hạt nhân, lấy tiếp xúc hòa hoãn để thẩm thấu tư tưởng và văn hóa, tác động vào kinh tế, phá hoại QP, AN, gieo rắc hạt giống chống phá từ bên trong\"."
+        },
+        {
+          "id": 7,
+          "question": "Sự kiện lịch sử nào đánh dấu sự \"hoàn thiện\" của chiến lược \"Diễn biến hòa bình\" và dẫn đến những hệ quả nghiêm trọng trong giai đoạn 1980-1990?",
+          "options": [
+            "A. Kết thúc Chiến tranh Việt Nam.",
+            "B. Sự sụp đổ của các nước Đông Âu và Liên Xô.",
+            "C. Thành lập Liên minh châu Âu.",
+            "D. Ký kết các hiệp ước cắt giảm vũ khí hạt nhân."
+          ],
+          "correct": 1,
+          "explanation": "Giai đoạn 1980 đến nay là giai đoạn chiến lược DBHB được hoàn thiện, dẫn đến việc lật đổ các nước Đông Âu và Liên Xô trong thập niên 1980-1990."
+        },
+        {
+          "id": 8,
+          "question": "\"Học thuyết xung đột cường độ thấp\" (Low-Intensity Conflict Doctrine) và việc khôi phục sức mạnh kinh tế-quân sự gắn liền với Tổng thống Mỹ nào?",
+          "options": [
+            "A. Richard Nixon",
+            "B. John F. Kennedy",
+            "C. Ronald Reagan",
+            "D. George H.W. Bush"
+          ],
+          "correct": 2,
+          "explanation": "Ronald Reagan (nhậm chức 1981) đã khôi phục sức mạnh kinh tế-quân sự và xây dựng \"Học thuyết xung đột cường độ thấp\", can thiệp trực tiếp vào các nước có xu hướng tiến bộ."
+        },
+        {
+          "id": 9,
+          "question": "Tổng thống George H.W. Bush đã tuyên bố kết thúc chiến lược \"Ngăn chặn\" và chuyển sang chiến lược \"Vượt trên ngăn chặn\" vào thời điểm nào?",
+          "options": [
+            "A. Tháng 01/1961",
+            "B. Tháng 01/1981",
+            "C. Tháng 05/1989",
+            "D. Tháng 01/2009"
+          ],
+          "correct": 2,
+          "explanation": "George H.W. Bush nhậm chức 1989 và tháng 5/1989 đã tuyên bố kết thúc \"Ngăn chặn\", chuyển sang \"Vượt trên ngăn chặn\"."
+        },
+        {
+          "id": 10,
+          "question": "Trong chiến lược quốc phòng của Tổng thống Barack Obama, điểm khác biệt so với các chiến lược trước đây trong việc đối phó với các khu vực bất ổn là gì?",
+          "options": [
+            "A. Ưu tiên đánh phủ đầu đối phương để ngăn chặn nguy cơ.",
+            "B. Tăng cường hiện diện quân sự ở mọi khu vực có nguy cơ.",
+            "C. Phối hợp \"Sức mạnh mềm\" bên cạnh sử dụng quân sự, tự giúp phát triển kinh tế, chính trị, xã hội tại các khu vực có nguy cơ bất ổn.",
+            "D. Tập trung vào việc cô lập hoàn toàn các quốc gia không tuân thủ."
+          ],
+          "correct": 2,
+          "explanation": "Obama nhậm chức 2009, chiến lược quốc phòng của Mỹ dưới thời ông nhấn mạnh việc phối hợp \"Sức mạnh mềm\" và tự giúp phát triển KT, CT, XH tại các khu vực bất ổn, thay vì chỉ ưu tiên đánh phủ đầu."
+        },
+        {
+          "id": 11,
+          "question": "\"Bạo loạn lật đổ\" được định nghĩa là gì trong bài học?",
+          "options": [
+            "A. Các cuộc biểu tình ôn hòa đòi hỏi quyền lợi dân sự.",
+            "B. Hành động chống phá bằng bạo lực do lực lượng phản động, ly khai, đối lập thực hiện nhằm gây rối loạn an ninh, trật tự hoặc lật đổ chính quyền.",
+            "C. Hoạt động tình báo thu thập thông tin mật về quốc gia đối lập.",
+            "D. Các chiến dịch truyền thông xuyên tạc nhằm làm suy yếu uy tín của chính quyền."
+          ],
+          "correct": 1,
+          "explanation": "BLLĐ được định nghĩa là hành động chống phá bằng bạo lực do lực lượng phản động, ly khai, đối lập thực hiện, nhằm gây rối loạn an ninh, trật tự hoặc lật đổ."
+        },
+        {
+          "id": 12,
+          "question": "Mối quan hệ giữa \"Diễn biến hòa bình\" và \"Bạo loạn lật đổ\" là gì?",
+          "options": [
+            "A. Chúng là hai chiến lược hoàn toàn độc lập và không liên quan.",
+            "B. Bạo loạn lật đổ là một thủ đoạn gắn liền và thường là sự leo thang của chiến lược Diễn biến hòa bình.",
+            "C. Diễn biến hòa bình là kết quả tất yếu của một cuộc bạo loạn lật đổ thành công.",
+            "D. Cả hai đều là biện pháp phi quân sự để thay đổi chế độ chính trị."
+          ],
+          "correct": 1,
+          "explanation": "Bài học khẳng định BLLĐ là một thủ đoạn gắn liền với chiến lược DBHB, thường là bước leo thang khi các biện pháp phi quân sự của DBHB không đạt hiệu quả hoặc tạo được điều kiện chín muồi."
+        },
+        {
+          "id": 13,
+          "question": "Các hình thức bạo loạn lật đổ được nêu trong bài học bao gồm những gì?",
+          "options": [
+            "A. Bạo loạn kinh tế và bạo loạn văn hóa.",
+            "B. Bạo loạn chính trị, bạo loạn vũ trang, và bạo loạn chính trị kết hợp bạo loạn vũ trang.",
+            "C. Bạo loạn tôn giáo và bạo loạn sắc tộc.",
+            "D. Bạo loạn xã hội và bạo loạn môi trường."
+          ],
+          "correct": 1,
+          "explanation": "Bài học liệt kê các hình thức bạo loạn bao gồm bạo loạn chính trị, bạo loạn vũ trang, và bạo loạn chính trị kết hợp bạo loạn vũ trang."
+        },
+        {
+          "id": 14,
+          "question": "Theo Hội nghị giữa nhiệm kỳ Khóa VII (tháng 01/1994), Đảng ta đã dùng cụm từ \"4 nguy cơ\" để cảnh báo về những thách thức nào?",
+          "options": [
+            "A. Thiên tai, dịch bệnh, khủng hoảng kinh tế, xung đột biên giới.",
+            "B. Chệch hướng xã hội chủ nghĩa, tụt hậu về kinh tế, tham nhũng, diễn biến hòa bình.",
+            "C. Xâm lược quân sự, cấm vận kinh tế, cô lập ngoại giao, nội chiến.",
+            "D. Suy thoái môi trường, già hóa dân số, thiếu hụt lao động, áp lực đô thị hóa."
+          ],
+          "correct": 1,
+          "explanation": "Đảng ta đã xác định 4 nguy cơ: chệch hướng xã hội chủ nghĩa, tụt hậu về kinh tế, tham nhũng, và diễn biến hòa bình."
+        },
+        {
+          "id": 15,
+          "question": "Đâu là đặc điểm KHÔNG ĐÚNG về chiến lược \"Diễn biến hòa bình\"?",
+          "options": [
+            "A. Là chiến lược cơ bản của chủ nghĩa đế quốc và các thế lực phản động.",
+            "B. Mục đích nhằm lật đổ chế độ chính trị của các nước tiến bộ.",
+            "C. Sử dụng chủ yếu các biện pháp quân sự quy mô lớn để đạt mục đích.",
+            "D. Tập trung vào việc gây mất ổn định từ bên trong."
+          ],
+          "correct": 2,
+          "explanation": "DBHB sử dụng biện pháp phi quân sự là chủ yếu, không phải biện pháp quân sự quy mô lớn."
+        },
+        {
+          "id": 16,
+          "question": "Giai đoạn 1945 – 1980 của sự hình thành chiến lược \"Diễn biến hòa bình\" được mô tả là giai đoạn gì?",
+          "options": [
+            "A. Giai đoạn hoàn thiện và áp dụng rộng rãi.",
+            "B. Giai đoạn manh nha hình thành.",
+            "C. Giai đoạn thất bại và bị loại bỏ.",
+            "D. Giai đoạn chuyển đổi sang chiến tranh tổng lực."
+          ],
+          "correct": 1,
+          "explanation": "Bài học phân chia rõ ràng: 1945-1980 là giai đoạn manh nha hình thành."
+        },
+        {
+          "id": 17,
+          "question": "\"Cây gậy và củ cà rốt\" là chiến lược được đề xuất vào năm 1970 bởi Tổng thống Mỹ nào, và nó thuộc giai đoạn nào của \"Diễn biến hòa bình\"?",
+          "options": [
+            "A. John F. Kennedy, giai đoạn 1945-1980.",
+            "B. Richard Nixon, giai đoạn 1945-1980.",
+            "C. Ronald Reagan, giai đoạn 1980 đến nay.",
+            "D. George H.W. Bush, giai đoạn 1980 đến nay."
+          ],
+          "correct": 1,
+          "explanation": "Richard Nixon đưa ra chiến lược \"Cây gậy và củ cà rốt\" vào năm 1970, nằm trong giai đoạn manh nha hình thành của DBHB (1945-1980)."
+        },
+        {
+          "id": 18,
+          "question": "Theo quan điểm của Barack Obama, chiến lược quốc phòng của Mỹ phải phối hợp \"Sức mạnh mềm\". \"Sức mạnh mềm\" ở đây được hiểu là gì trong bối cảnh phòng chống DBHB?",
+          "options": [
+            "A. Sử dụng vũ lực tối thiểu để đạt hiệu quả tối đa.",
+            "B. Tăng cường các biện pháp trừng phạt kinh tế cứng rắn.",
+            "C. Tự giúp phát triển kinh tế, chính trị, xã hội tại các khu vực có nguy cơ bất ổn.",
+            "D. Thiết lập các liên minh quân sự chặt chẽ hơn."
+          ],
+          "correct": 2,
+          "explanation": "\"Sức mạnh mềm\" dưới thời Obama được giải thích là việc \"tự giúp phát triển kinh tế, chính trị, xã hội tại các khu vực có nguy cơ bất ổn định\", nhằm tạo ảnh hưởng và thay đổi từ bên trong."
+        },
+        {
+          "id": 19,
+          "question": "Tại sao bạo loạn lật đổ thường diễn ra ở \"nhiều nơi, nhiều vùng\" và tập trung vào \"Trung tâm KT, CT, VH\"?",
+          "options": [
+            "A. Để gây ra thiệt hại quân sự tối đa.",
+            "B. Để tạo hiệu ứng tâm lý hoang mang, chia rẽ, làm tê liệt khả năng điều hành của chính quyền.",
+            "C. Để kiểm soát các nguồn tài nguyên thiên nhiên.",
+            "D. Để thu hút sự chú ý của cộng đồng quốc tế."
+          ],
+          "correct": 1,
+          "explanation": "Mục tiêu của BLLĐ là gây rối loạn an ninh, trật tự hoặc lật đổ. Việc diễn ra ở nhiều nơi, đặc biệt là các trung tâm quan trọng, nhằm khuếch đại sự hỗn loạn, làm suy yếu niềm tin của dân chúng và khả năng kiểm soát của chính quyền, tạo điều kiện cho sự lật đổ."
+        },
+        {
+          "id": 20,
+          "question": "Mục tiêu học phần về phòng chống \"Diễn biến hòa bình\", \"Bạo loạn lật đổ\" bao gồm việc nâng cao tinh thần cảnh giác cách mạng. Điều này có ý nghĩa thực tiễn như thế nào?",
+          "options": [
+            "A. Giúp sinh viên hiểu rõ lịch sử chiến tranh lạnh.",
+            "B. Góp phần làm thất bại âm mưu chống phá của kẻ thù và bảo vệ chế độ.",
+            "C. Đẩy mạnh hội nhập kinh tế quốc tế.",
+            "D. Nâng cao kỹ năng phân tích chính trị học."
+          ],
+          "correct": 1,
+          "explanation": "Mục tiêu học phần rõ ràng nêu \"Nâng cao tinh thần cảnh giác cách mạng, góp phần làm thất bại âm mưu chống phá của kẻ thù\". Đây là ý nghĩa thực tiễn quan trọng nhất."
+        }
+      ],
+      "num_questions": 20,
+      "user_answers": null,
+      "score": null,
+      "submitted": false
+    },
+    {
+      "id": 2,
+      "course_code": "test1",
+      "course_name": "python",
+      "upload_time": "2026-01-10 01:48:24",
+      "summary": "Bài học NDF109 – Quốc phòng, An ninh 2, Bài 1 tập trung vào chiến lược “Diễn biến hòa bình” (DBHB) và bạo loạn lật đổ (BLLĐ) của các thế lực thù địch nhằm chống phá cách mạng Việt Nam và chủ nghĩa xã hội. Mục tiêu chính là trang bị kiến thức cơ bản về nguồn gốc, quá trình hình thành, âm mưu, thủ đoạn, cũng như các giải pháp phòng chống của Đảng và Nhà nước ta, đồng thời nâng cao tinh thần cảnh giác cách mạng.\n\n**Các Khái niệm Quan trọng:**\n*   **“Diễn biến hòa bình” (DBHB):** Được định nghĩa là chiến lược cơ bản của chủ nghĩa đế quốc và các thế lực phản động, sử dụng các biện pháp phi quân sự để từng bước lật đổ chế độ chính trị của các nước tiến bộ. Bản chất là phá hoại từ bên trong, “thẩm thấu” tư tưởng, văn hóa, và tác động vào kinh tế, quốc phòng, an ninh để gây suy yếu, dẫn đến thay đổi chế độ.\n*   **“Bạo loạn lật đổ” (BLLĐ):** Là hành động chống phá bằng bạo lực, do các lực lượng phản động, ly khai, hoặc đối lập thực hiện. Mục đích là gây rối loạn an ninh, trật tự xã hội hoặc trực tiếp lật đổ chính quyền. BLLĐ thường là bước tiếp theo hoặc được sử dụng song song với DBHB khi các biện pháp phi quân sự không đạt hiệu quả mong muốn, hoặc để tạo áp lực cuối cùng.\n\n**Kiến thức Cốt lõi:**\n*   **Quá trình hình thành và phát triển của DBHB:** Bắt nguồn từ Mỹ sau Chiến tranh thế giới thứ 2 với chiến lược “ngăn chặn Chủ nghĩa Cộng sản” (1947), trải qua các giai đoạn với tên gọi và thủ đoạn khác nhau như “Phương pháp hòa bình” (1953), “Cây gậy và củ cà rốt” (1970). Các tổng thống Mỹ như John F. Kennedy với “Chiến lược phản ứng linh hoạt” và Richard Nixon với “Chiến lược răn đe thực tế” đã góp phần định hình. Đến những năm 1980, đặc biệt dưới thời Ronald Reagan với “Học thuyết xung đột cường độ thấp” và George H.W. Bush với “Vượt trên ngăn chặn” (linh hồn là DBHB), chiến lược này đã hoàn thiện và đạt được “thành công” trong việc lật đổ các nước Đông Âu và Liên Xô. Gần đây, dưới thời Barack Obama, Mỹ còn chú trọng phối hợp “sức mạnh mềm” bên cạnh sức mạnh quân sự.\n*   **Đặc điểm của BLLĐ:** Bao gồm các hình thức như bạo loạn chính trị, bạo loạn vũ trang, hoặc kết hợp cả hai. Quy mô từ nhỏ đến lớn, xảy ra ở nhiều nơi, nhiều vùng, đặc biệt tập trung vào các trung tâm kinh tế, chính trị, văn hóa. BLLĐ được xem là một thủ đoạn gắn liền, bổ trợ cho chiến lược DBHB.\n*   **Bốn nguy cơ đối với cách mạng Việt Nam:** Tại Hội nghị giữa nhiệm kỳ Khóa VII (01/1994), Đảng Cộng sản Việt Nam đã nhận diện bốn nguy cơ lớn: chệch hướng xã hội chủ nghĩa, tụt hậu về kinh tế, tham nhũng, và diễn biến hòa bình. Điều này cho thấy sự nhận thức sâu sắc về mối đe dọa từ cả yếu tố nội tại và bên ngoài.\n\n**Ứng dụng Thực tế:**\nViệc nghiên cứu bài học này giúp người học:\n*   **Nâng cao cảnh giác cách mạng:** Hiểu rõ bản chất, âm mưu, thủ đoạn của các thế lực thù địch giúp nhận diện và đấu tranh hiệu quả với các biểu hiện của DBHB và BLLĐ trong đời sống xã hội.\n*   **Củng cố niềm tin và ý thức quốc phòng:** Phát triển ý thức trách nhiệm công dân trong việc bảo vệ an ninh quốc gia, giữ vững ổn định chính trị-xã hội, và góp phần xây dựng đất nước theo định hướng xã hội chủ nghĩa.\n*   **Phân tích và đánh giá thông tin:** Có khả năng phân tích các thông tin sai lệch, xuyên tạc của các thế lực thù địch nhằm chống phá Đảng và Nhà nước, từ đó không bị lôi kéo vào các hoạt động gây mất ổn định.\n*   **Chủ động tham gia phòng chống:** Thực hiện các giải pháp phòng chống DBHB, BLLĐ bằng cách học tập, lao động, rèn luyện tốt, xây dựng khối đại đoàn kết toàn dân tộc vững mạnh.",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Chiến lược \"Diễn biến hòa bình\" được định nghĩa là gì?",
+          "options": [
+            "A. Là chiến lược quân sự sử dụng vũ lực để thay đổi chế độ chính trị của các nước tiến bộ.",
+            "B. Là chiến lược cơ bản của chủ nghĩa đế quốc và các thế lực phản động, sử dụng biện pháp phi quân sự để lật đổ chế độ chính trị.",
+            "C. Là chiến lược ngoại giao nhằm thúc đẩy hòa bình và hợp tác giữa các quốc gia có chế độ chính trị khác nhau.",
+            "D. Là chiến lược kinh tế nhằm cạnh tranh và kiểm soát thị trường toàn cầu thông qua các hiệp định thương mại."
+          ],
+          "correct": 1,
+          "explanation": "Khái niệm \"Diễn biến hòa bình\" được định nghĩa rõ là chiến lược cơ bản của chủ nghĩa đế quốc và các thế lực phản động, sử dụng biện pháp phi quân sự để lật đổ chế độ chính trị của các nước tiến bộ."
+        },
+        {
+          "id": 2,
+          "question": "Tổng thống Mỹ nào đã đưa ra \"Chiến lược phản ứng linh hoạt\" vào tháng 01/1961 và góp phần hình thành tên gọi \"Diễn biến hòa bình\"?",
+          "options": [
+            "A. Richard Nixon",
+            "B. John F. Kennedy",
+            "C. Ronald Reagan",
+            "D. George H.W. Bush"
+          ],
+          "correct": 1,
+          "explanation": "John F. Kennedy là tổng thống Mỹ đã đưa ra \"Chiến lược phản ứng linh hoạt\" vào tháng 01/1961, với chủ trương \"cứng rắn bằng sức mạnh quân sự, vừa mềm dẻo bằng các biện pháp hòa bình\", từ đó hình thành tên gọi \"Diễn biến hòa bình\"."
+        },
+        {
+          "id": 3,
+          "question": "Chiến lược \"Cây gậy và củ cà rốt\" được Tổng thống Mỹ nào đưa ra vào năm 1970 để thực hiện \"Diễn biến hòa bình\"?",
+          "options": [
+            "A. John F. Kennedy",
+            "B. Ronald Reagan",
+            "C. Richard Nixon",
+            "D. Barack Obama"
+          ],
+          "correct": 2,
+          "explanation": "Richard Nixon đã đưa ra chiến lược \"Cây gậy và củ cà rốt\" vào năm 1970 nhằm thực hiện \"Diễn biến hòa bình\", coi trọng răn đe hạt nhân và lấy tiếp xúc hòa hoãn để thẩm thấu tư tưởng và văn hóa."
+        },
+        {
+          "id": 4,
+          "question": "Chiến lược \"Diễn biến hòa bình\" được hoàn thiện và phát triển mạnh mẽ từ giai đoạn nào?",
+          "options": [
+            "A. 1945 – 1960",
+            "B. 1960 – 1980",
+            "C. 1980 đến nay",
+            "D. Sau năm 2000"
+          ],
+          "correct": 2,
+          "explanation": "Chiến lược \"Diễn biến hòa bình\" được hoàn thiện và phát triển mạnh mẽ từ giai đoạn 1980 đến nay, dẫn đến việc lật đổ các nước Đông Âu và Liên Xô, và tiếp tục là chiến lược cơ bản đối với các nước XHCN còn lại."
+        },
+        {
+          "id": 5,
+          "question": "Học thuyết \"xung đột cường độ thấp\" được Tổng thống Mỹ nào khôi phục và xây dựng nhằm can thiệp trực tiếp vào các nước có xu hướng tiến bộ trên thế giới?",
+          "options": [
+            "A. George H.W. Bush",
+            "B. Barack Obama",
+            "C. Ronald Reagan",
+            "D. John F. Kennedy"
+          ],
+          "correct": 2,
+          "explanation": "Ronald Reagan (1981-1989) đã khôi phục sức mạnh kinh tế-quân sự và xây dựng \"Học thuyết xung đột cường độ thấp\" để can thiệp trực tiếp vào các nước có xu hướng tiến bộ."
+        },
+        {
+          "id": 6,
+          "question": "Đâu là một trong bốn nguy cơ mà Đảng ta đã nhận diện tại Hội nghị giữa nhiệm kỳ Khóa VII (tháng 01/1994)?",
+          "options": [
+            "A. Khủng hoảng kinh tế toàn cầu",
+            "B. Chệch hướng xã hội chủ nghĩa",
+            "C. Sự can thiệp quân sự trực tiếp",
+            "D. Thiên tai và biến đổi khí hậu"
+          ],
+          "correct": 1,
+          "explanation": "Tại Hội nghị giữa nhiệm kỳ Khóa VII (01/1994), Đảng ta đã chỉ ra bốn nguy cơ: chệch hướng xã hội chủ nghĩa, tụt hậu về kinh tế, tham nhũng và diễn biến hòa bình."
+        },
+        {
+          "id": 7,
+          "question": "Chiến lược \"Vượt trên ngăn chặn\" được Tổng thống Mỹ George H.W. Bush tuyên bố vào tháng 5/1989, trong đó linh hồn là gì?",
+          "options": [
+            "A. Răn đe hạt nhân",
+            "B. Can thiệp quân sự quy mô lớn",
+            "C. Diễn biến hòa bình",
+            "D. Hợp tác kinh tế khu vực"
+          ],
+          "correct": 2,
+          "explanation": "Tổng thống George H.W. Bush đã tuyên bố chiến lược \"Vượt trên ngăn chặn\" vào tháng 5/1989, với linh hồn chính là \"diễn biến hòa bình\"."
+        },
+        {
+          "id": 8,
+          "question": "Khái niệm \"Bạo loạn lật đổ\" được hiểu là gì?",
+          "options": [
+            "A. Hành động biểu tình ôn hòa của nhân dân để yêu cầu thay đổi chính sách.",
+            "B. Hành động chống phá bằng bạo lực của lực lượng phản động, ly khai, đối lập nhằm gây rối loạn hoặc lật đổ.",
+            "C. Chiến dịch tuyên truyền chống chính quyền thông qua mạng xã hội.",
+            "D. Cuộc bầu cử tự do và công bằng nhằm chọn ra lãnh đạo mới."
+          ],
+          "correct": 1,
+          "explanation": "Bạo loạn lật đổ là hành động chống phá bằng bạo lực, do các lực lượng phản động, ly khai, đối lập thực hiện nhằm gây rối loạn an ninh, trật tự hoặc lật đổ chính quyền."
+        },
+        {
+          "id": 9,
+          "question": "Theo nội dung bài học, hình thức bạo loạn nào KHÔNG được đề cập trong chiến lược bạo loạn lật đổ?",
+          "options": [
+            "A. Bạo loạn chính trị",
+            "B. Bạo loạn vũ trang",
+            "C. Bạo loạn chính trị kết hợp bạo loạn vũ trang",
+            "D. Bạo loạn kinh tế"
+          ],
+          "correct": 3,
+          "explanation": "Bài học chỉ đề cập đến bạo loạn chính trị, bạo loạn vũ trang, và bạo loạn chính trị kết hợp bạo loạn vũ trang. Bạo loạn kinh tế không được liệt kê là một hình thức riêng biệt."
+        },
+        {
+          "id": 10,
+          "question": "Trong chiến lược quốc phòng của Mỹ dưới thời Tổng thống Ba-rắc Ô-ba-ma (2009), điểm khác biệt so với trước đây là gì?",
+          "options": [
+            "A. Ưu tiên đánh phủ đầu đối phương bằng sức mạnh quân sự.",
+            "B. Hoàn toàn từ bỏ việc sử dụng sức mạnh quân sự.",
+            "C. Phối hợp \"Sức mạnh mềm\" bên cạnh việc sử dụng quân sự, tự giúp phát triển kinh tế, chính trị, xã hội.",
+            "D. Tập trung vào việc cô lập hoàn toàn các nước có nguy cơ bất ổn."
+          ],
+          "correct": 2,
+          "explanation": "Dưới thời Obama, chiến lược quốc phòng Mỹ phối hợp \"Sức mạnh mềm\" bên cạnh quân sự; tự giúp phát triển kinh tế, chính trị, xã hội tại các khu vực có nguy cơ bất ổn định, khác biệt với việc chỉ ưu tiên đánh phủ đầu trước đây."
+        },
+        {
+          "id": 11,
+          "question": "Chiến lược \"ngăn chặn CNCS\" được Mỹ đưa ra vào thời điểm nào sau Chiến tranh thế giới thứ 2?",
+          "options": [
+            "A. 1945",
+            "B. 1947",
+            "C. 1953",
+            "D. 1970"
+          ],
+          "correct": 1,
+          "explanation": "Chiến lược \"ngăn chặn CNCS\" được Mỹ đưa ra vào tháng 3/1947, đánh dấu sự khởi đầu của các âm mưu chống phá Chủ nghĩa xã hội."
+        },
+        {
+          "id": 12,
+          "question": "Mục đích chính của chiến lược \"Diễn biến hòa bình\" là gì?",
+          "options": [
+            "A. Thiết lập quan hệ ngoại giao hòa bình với các nước đối địch.",
+            "B. Lật đổ chế độ chính trị của các nước tiến bộ bằng biện pháp phi quân sự.",
+            "C. Đẩy mạnh hợp tác kinh tế để hội nhập quốc tế.",
+            "D. Thúc đẩy dân chủ và nhân quyền thông qua viện trợ kinh tế."
+          ],
+          "correct": 1,
+          "explanation": "Mục đích chính của DBHB là lật đổ chế độ chính trị của các nước tiến bộ thông qua các biện pháp phi quân sự, tác động từ bên trong."
+        },
+        {
+          "id": 13,
+          "question": "Trong bối cảnh \"Diễn biến hòa bình\", chiến lược \"răn đe thực tế\" của Tổng thống Nixon coi trọng điều gì?",
+          "options": [
+            "A. Ngoại giao mềm mỏng và viện trợ nhân đạo.",
+            "B. Răn đe hạt nhân và lấy tiếp xúc hòa hoãn để thẩm thấu tư tưởng và văn hóa.",
+            "C. Phát triển kinh tế nội địa và tự cường.",
+            "D. Xây dựng liên minh quân sự chặt chẽ với các nước đồng minh."
+          ],
+          "correct": 1,
+          "explanation": "Chiến lược \"răn đe thực tế\" của Nixon coi trọng răn đe hạt nhân và lấy tiếp xúc hòa hoãn để thẩm thấu tư tưởng và văn hóa, tác động vào kinh tế, phá hoại QP, AN, gieo rắc hạt giống chống phá từ bên trong."
+        },
+        {
+          "id": 14,
+          "question": "Bạo loạn lật đổ có quy mô như thế nào?",
+          "options": [
+            "A. Chỉ diễn ra ở một số thành phố lớn.",
+            "B. Thường chỉ có quy mô nhỏ, lẻ tẻ và dễ dàng kiểm soát.",
+            "C. Có thể có nhiều mức độ, từ nhỏ đến lớn, ở nhiều nơi, nhiều vùng và tập trung vào trung tâm kinh tế, chính trị, văn hóa.",
+            "D. Luôn là các cuộc nổi dậy vũ trang quy mô toàn quốc."
+          ],
+          "correct": 2,
+          "explanation": "BLLĐ có nhiều mức độ, từ nhỏ đến lớn, có thể diễn ra ở nhiều nơi, nhiều vùng, và thường nhắm vào các trung tâm kinh tế, chính trị, văn hóa."
+        },
+        {
+          "id": 15,
+          "question": "Mối quan hệ giữa \"Diễn biến hòa bình\" và \"Bạo loạn lật đổ\" là gì?",
+          "options": [
+            "A. Chúng là hai chiến lược hoàn toàn độc lập, không liên quan đến nhau.",
+            "B. \"Bạo loạn lật đổ\" là tiền đề để thực hiện \"Diễn biến hòa bình\".",
+            "C. \"Bạo loạn lật đổ\" là một thủ đoạn gắn liền và bổ trợ cho chiến lược \"Diễn biến hòa bình\".",
+            "D. \"Diễn biến hòa bình\" chỉ xuất hiện khi \"Bạo loạn lật đổ\" thất bại."
+          ],
+          "correct": 2,
+          "explanation": "Bạo loạn lật đổ là một thủ đoạn gắn liền với chiến lược \"Diễn biến hòa bình\", thường được sử dụng như một bước leo thang hoặc kết hợp để đạt mục đích lật đổ chế độ."
+        },
+        {
+          "id": 16,
+          "question": "Nội dung nào sau đây KHÔNG phải là một trong \"bốn nguy cơ\" mà Đảng ta đã nhận diện tại Hội nghị giữa nhiệm kỳ Khóa VII (01/1994)?",
+          "options": [
+            "A. Tụt hậu về kinh tế",
+            "B. Suy thoái môi trường",
+            "C. Tham nhũng",
+            "D. Diễn biến hòa bình"
+          ],
+          "correct": 1,
+          "explanation": "Bốn nguy cơ được nêu là chệch hướng xã hội chủ nghĩa, tụt hậu về kinh tế, tham nhũng, và diễn biến hòa bình. Suy thoái môi trường không nằm trong danh sách này."
+        },
+        {
+          "id": 17,
+          "question": "Việc nắm vững kiến thức về chiến lược \"Diễn biến hòa bình\" và \"Bạo loạn lật đổ\" mang lại ứng dụng thực tế quan trọng nhất nào cho sinh viên?",
+          "options": [
+            "A. Giúp sinh viên tìm kiếm cơ hội du học tại các nước phương Tây.",
+            "B. Nâng cao tinh thần cảnh giác cách mạng và góp phần làm thất bại âm mưu chống phá của kẻ thù.",
+            "C. Hỗ trợ sinh viên phát triển kỹ năng đàm phán quốc tế.",
+            "D. Cung cấp kiến thức lịch sử quân sự để nghiên cứu sâu hơn."
+          ],
+          "correct": 1,
+          "explanation": "Mục tiêu của bài học là nâng cao tinh thần cảnh giác cách mạng và góp phần làm thất bại âm mưu chống phá của kẻ thù, đây là ứng dụng thực tế quan trọng nhất."
+        },
+        {
+          "id": 18,
+          "question": "Giai đoạn (1945 – 1980) trong sự hình thành và phát triển của chiến lược \"Diễn biến hòa bình\" được mô tả là gì?",
+          "options": [
+            "A. Giai đoạn chiến lược đã hoàn thiện và đạt được nhiều thành công lớn.",
+            "B. Giai đoạn thử nghiệm các biện pháp quân sự trực tiếp.",
+            "C. Giai đoạn manh nha hình thành các tư tưởng và phương pháp chống phá phi quân sự.",
+            "D. Giai đoạn tập trung vào phát triển kinh tế và bỏ qua yếu tố an ninh."
+          ],
+          "correct": 2,
+          "explanation": "Giai đoạn 1945 – 1980 được mô tả là giai đoạn manh nha hình thành các tư tưởng và phương pháp chống phá phi quân sự, với nhiều chiến lược tiền thân ra đời."
+        },
+        {
+          "id": 19,
+          "question": "Để đối phó với chiến lược \"Diễn biến hòa bình\" và \"Bạo loạn lật đổ\", Đảng và Nhà nước Việt Nam chủ trương thực hiện điều gì?",
+          "options": [
+            "A. Cô lập hoàn toàn với thế giới bên ngoài.",
+            "B. Tăng cường phòng thủ quân sự và hạn chế giao lưu văn hóa.",
+            "C. Nắm được âm mưu, thủ đoạn của địch; nhận biết biểu hiện; nâng cao cảnh giác và đưa ra giải pháp phòng chống phù hợp.",
+            "D. Chỉ tập trung vào phát triển kinh tế mà không quan tâm đến quốc phòng, an ninh."
+          ],
+          "correct": 2,
+          "explanation": "Bài học nhấn mạnh việc nắm được âm mưu, thủ đoạn, nhận biết biểu hiện, nâng cao cảnh giác cách mạng và đưa ra các giải pháp phòng chống của Đảng và Nhà nước ta."
+        },
+        {
+          "id": 20,
+          "question": "Thủ đoạn \"Diễn biến hòa bình\" chủ yếu nhằm vào mục tiêu nào để gây suy yếu và lật đổ một chế độ chính trị?",
+          "options": [
+            "A. Trực tiếp tấn công quân sự vào các cơ sở hạ tầng trọng yếu.",
+            "B. Phá hoại từ bên trong thông qua thẩm thấu tư tưởng, văn hóa, và tác động vào kinh tế, quốc phòng, an ninh.",
+            "C. Khuyến khích di cư hàng loạt để làm suy yếu lực lượng lao động.",
+            "D. Cấm vận kinh tế và cô lập hoàn toàn một quốc gia."
+          ],
+          "correct": 1,
+          "explanation": "Chiến lược DBHB tập trung vào phá hoại từ bên trong, thẩm thấu tư tưởng và văn hóa, tác động vào các lĩnh vực kinh tế, quốc phòng, an ninh để gây suy yếu và lật đổ."
+        }
+      ],
+      "num_questions": 20,
+      "user_answers": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        2,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "score": 1.0,
+      "submitted": true,
+      "correct_count": 2,
+      "submit_time": "2026-01-10 01:49:35"
+    },
+    {
+      "id": 3,
+      "course_code": "test1",
+      "course_name": "python",
+      "upload_time": "2026-01-10 01:52:08",
+      "summary": "Bài học NDF109 – Quốc phòng, An ninh 2, Bài 1 tập trung phân tích sâu sắc chiến lược “diễn biến hòa bình” (DBHB) và “bạo loạn lật đổ” (BLLĐ) của các thế lực thù địch nhằm chống phá cách mạng Việt Nam. Mục tiêu chính là trang bị cho người học những kiến thức cơ bản về quá trình hình thành, âm mưu, thủ đoạn, cũng như phương châm và giải pháp phòng chống của Đảng và Nhà nước ta, từ đó nâng cao tinh thần cảnh giác cách mạng và góp phần làm thất bại mọi âm mưu của kẻ thù.\n\n**Các khái niệm quan trọng:**\n\n*   **“Diễn biến hòa bình” (DBHB):** Đây là chiến lược cơ bản của chủ nghĩa đế quốc và các thế lực phản động, sử dụng các biện pháp phi quân sự như: thẩm thấu tư tưởng, văn hóa, tác động vào kinh tế, phá hoại quốc phòng, an ninh, gieo rắc hạt giống chống phá từ bên trong để từng bước lật đổ chế độ chính trị của các nước tiến bộ, đặc biệt là các nước xã hội chủ nghĩa.\n*   **“Bạo loạn lật đổ” (BLLĐ):** Là những hành động chống phá bằng bạo lực, do các lực lượng phản động, ly khai, đối lập thực hiện với mục đích gây rối loạn an ninh, trật tự xã hội hoặc trực tiếp lật đổ chính quyền. BLLĐ có nhiều hình thức như bạo loạn chính trị, bạo loạn vũ trang, hoặc kết hợp cả hai, với quy mô đa dạng từ nhỏ đến lớn, diễn ra ở nhiều nơi, đặc biệt là các trung tâm kinh tế, chính trị, văn hóa quan trọng. BLLĐ được xem là một thủ đoạn gắn liền và là sự tiếp nối của chiến lược DBHB khi các biện pháp phi quân sự đạt đến giới hạn hoặc cần một sự thúc đẩy mạnh mẽ hơn.\n\n**Kiến thức cốt lõi:**\n\nBài học trình bày quá trình hình thành và phát triển của chiến lược DBHB qua hai giai đoạn chính. Giai đoạn 1945-1980 là giai đoạn manh nha, bắt nguồn từ Mỹ sau Chiến tranh thế giới thứ hai với các chiến lược “ngăn chặn CNCS”, “phương pháp hòa bình”. Các tổng thống Mỹ như John F. Kennedy với “Chiến lược phản ứng linh hoạt” (cứng rắn về quân sự, mềm dẻo về hòa bình) và Richard Nixon với “Răn đe thực tế” cùng chiến lược “Cây gậy và củ cà rốt” đã định hình phương thức thẩm thấu, phá hoại từ bên trong. Giai đoạn 1980 đến nay là giai đoạn phát triển và hoàn thiện, đánh dấu bằng sự sụp đổ của các nước Đông Âu và Liên Xô, với các học thuyết như “xung đột cường độ thấp” của Ronald Reagan, “Vượt trên ngăn chặn” (mà linh hồn là DBHB) của George H.W. Bush, và gần đây là việc sử dụng “Sức mạnh mềm” kết hợp hỗ trợ phát triển kinh tế, chính trị, xã hội của Barack Obama, cho thấy sự tinh vi và thích nghi của chiến lược này.\n\nĐảng Cộng sản Việt Nam tại Hội nghị giữa nhiệm kỳ Khóa VII (01/1994) đã chỉ rõ bốn nguy cơ lớn đối với cách mạng Việt Nam, bao gồm: chệch hướng xã hội chủ nghĩa, tụt hậu về kinh tế, tham nhũng và “diễn biến hòa bình”. Việc nhận diện các nguy cơ này là cơ sở để Đảng và Nhà nước đề ra các giải pháp phòng chống hiệu quả.\n\n**Ứng dụng thực tế:**\n\nViệc nghiên cứu bài học này giúp mỗi cá nhân nhận biết được những biểu hiện, âm mưu, thủ đoạn của chiến lược DBHB và BLLĐ trong mọi lĩnh vực của đời sống xã hội. Từ đó, nâng cao tinh thần cảnh giác cách mạng, chủ động phòng ngừa, đấu tranh chống lại các hoạt động chống phá của các thế lực thù địch. Kiến thức này cũng góp phần củng cố niềm tin vào sự lãnh đạo của Đảng, vào con đường đi lên chủ nghĩa xã hội, và cùng toàn Đảng, toàn dân, toàn quân làm thất bại mọi âm mưu chống phá, bảo vệ vững chắc độc lập, chủ quyền, an ninh quốc gia và chế độ xã hội chủ nghĩa của Việt Nam.",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Theo bài học, chiến lược “Diễn biến hòa bình” được định nghĩa là chiến lược cơ bản của chủ nghĩa đế quốc và các thế lực phản động nhằm mục đích chính gì?",
+          "options": [
+            "A. Sử dụng sức mạnh quân sự trực tiếp để tấn công và chiếm đóng các quốc gia đối lập.",
+            "B. Cung cấp viện trợ kinh tế và kỹ thuật để thúc đẩy sự phát triển của các nước xã hội chủ nghĩa.",
+            "C. Sử dụng các biện pháp phi quân sự để từng bước lật đổ chế độ chính trị của các nước tiến bộ.",
+            "D. Thực hiện các cuộc đối thoại ngoại giao để giải quyết mọi mâu thuẫn quốc tế một cách hòa bình."
+          ],
+          "correct": 2,
+          "explanation": "Khái niệm 'Diễn biến hòa bình' nêu rõ đây là chiến lược sử dụng biện pháp phi quân sự để lật đổ chế độ chính trị của các nước tiến bộ."
+        },
+        {
+          "id": 2,
+          "question": "Tổng thống Mỹ John F. Kennedy (1961) đã góp phần hình thành tên gọi và nội dung của “Diễn biến hòa bình” thông qua chiến lược nào, với thái độ chủ đạo là gì?",
+          "options": [
+            "A. Chiến lược “Ngăn chặn CNCS”, chủ trương cô lập hoàn toàn các nước XHCN.",
+            "B. Chiến lược “Phản ứng linh hoạt”, chủ trương cứng rắn bằng quân sự và mềm dẻo bằng các biện pháp hòa bình.",
+            "C. Chiến lược “Cây gậy và củ cà rốt”, chủ trương vừa đe dọa quân sự vừa dụ dỗ kinh tế.",
+            "D. Chiến lược “Răn đe thực tế”, chủ trương chỉ tập trung vào răn đe hạt nhân."
+          ],
+          "correct": 1,
+          "explanation": "Bài học ghi rõ Kennedy nhậm chức năm 1961 đưa ra 'Chiến lược phản ứng linh hoạt', chủ trương 'Cứng rắn bằng sức mạnh quân sự, vừa có thái độ mềm dẻo bằng các biện pháp hòa bình', từ đó hình thành tên gọi 'DBHB'."
+        },
+        {
+          "id": 3,
+          "question": "Điểm cốt lõi trong chiến lược “Răn đe thực tế” và “Cây gậy và củ cà rốt” của Tổng thống Richard Nixon đối với chiến lược “Diễn biến hòa bình” là gì?",
+          "options": [
+            "A. Tập trung vào các cuộc tấn công quân sự phủ đầu vào các quốc gia XHCN.",
+            "B. Coi trọng răn đe hạt nhân, đồng thời lấy tiếp xúc hòa hoãn để thẩm thấu tư tưởng, văn hóa và phá hoại từ bên trong.",
+            "C. Hoàn toàn cắt đứt mọi quan hệ ngoại giao và kinh tế với các nước đối lập.",
+            "D. Hỗ trợ trực tiếp các phong trào nổi dậy vũ trang chống chính quyền XHCN."
+          ],
+          "correct": 1,
+          "explanation": "Bài học chỉ rõ Nixon đã thay thế chiến lược cũ bằng 'Răn đe thực tế', coi trọng răn đe hạt nhân, và 'lấy tiếp xúc hòa hoãn để thẩm thấu tư tưởng và văn hóa, tác động vào kinh tế, phá hoại QP, AN, gieo rắc hạt giống chống phá từ bên trong'. Chiến lược 'Cây gậy và củ cà rốt' được đưa ra để thực hiện DBHB."
+        },
+        {
+          "id": 4,
+          "question": "Bạo loạn lật đổ có mối quan hệ như thế nào với chiến lược “Diễn biến hòa bình”?",
+          "options": [
+            "A. Bạo loạn lật đổ là một chiến lược hoàn toàn độc lập và không liên quan đến “Diễn biến hòa bình”.",
+            "B. Bạo loạn lật đổ là một phương án quân sự thay thế khi “Diễn biến hòa bình” thất bại hoàn toàn.",
+            "C. Bạo loạn lật đổ là một thủ đoạn gắn liền với chiến lược “Diễn biến hòa bình”, thường là bước tiếp theo khi các biện pháp phi quân sự không đạt hiệu quả.",
+            "D. Bạo loạn lật đổ chỉ xảy ra ở các quốc gia không có sự ảnh hưởng của chiến lược “Diễn biến hòa bình”."
+          ],
+          "correct": 2,
+          "explanation": "Mục 'Bạo loạn lật đổ' trong bài học khẳng định 'BLLĐ là một thủ đoạn gắn liền với chiến lược “DBHB”'."
+        },
+        {
+          "id": 5,
+          "question": "Tại Hội nghị giữa nhiệm kỳ Khóa VII (tháng 01/1994), Đảng Cộng sản Việt Nam đã nhận diện 4 nguy cơ lớn nào đối với cách mạng Việt Nam?",
+          "options": [
+            "A. Thiên tai, dịch bệnh, khủng hoảng kinh tế toàn cầu, cạn kiệt tài nguyên.",
+            "B. Chệch hướng xã hội chủ nghĩa, tụt hậu về kinh tế, tham nhũng, diễn biến hòa bình.",
+            "C. Xung đột biên giới, tranh chấp lãnh thổ, can thiệp nước ngoài, mất ổn định chính trị khu vực.",
+            "D. Phá hoại môi trường, suy thoái đạo đức xã hội, già hóa dân số, thiếu hụt lao động."
+          ],
+          "correct": 1,
+          "explanation": "Bài học nêu rõ 'HỘI NGHỊ GIỮA NHIỆM KỲ KHÓA VII (THÁNG 01/1994), TRONG CÁC VĂN KIỆN, ĐẢNG TA DÙNG CỤM TỪ 4 NGUY CƠ: Chệch hướng xã hội chủ nghĩa, Tụt hậu về kinh tế, Tham nhũng, Diễn biến hòa bình'."
+        },
+        {
+          "id": 6,
+          "question": "Chiến lược “Vượt trên ngăn chặn” của Tổng thống George H.W. Bush (1989) có linh hồn là gì, thể hiện sự phát triển của chiến lược chống phá?",
+          "options": [
+            "A. Phát triển vượt trội sức mạnh quân sự truyền thống để răn đe đối thủ.",
+            "B. Cải thiện quan hệ đối ngoại và thúc đẩy hợp tác kinh tế đa phương.",
+            "C. Tập trung vào việc giải quyết các vấn đề môi trường toàn cầu.",
+            "D. “Diễn biến hòa bình”."
+          ],
+          "correct": 3,
+          "explanation": "Bài học đề cập: 'Tháng 5/1989, Tổng thống Mỹ George.H.W.Bush tuyên bố kết thúc chiến lược “Ngăn chặn”, chuyển sang chiến lược “Vượt trên ngăn chặn”, trong đó linh hồn là “diễn biến hòa bình”'."
+        },
+        {
+          "id": 7,
+          "question": "Đặc điểm nổi bật trong chiến lược quốc phòng của Tổng thống Barack Obama (2009) so với các chiến lược trước đây trong bối cảnh chống phá các nước tiến bộ là gì?",
+          "options": [
+            "A. Chỉ tập trung vào các cuộc tấn công phủ đầu bằng quân sự mà không phối hợp các biện pháp khác.",
+            "B. Bên cạnh sử dụng quân sự, còn phải phối hợp “Sức mạnh mềm” và tự giúp phát triển kinh tế, chính trị, xã hội tại các khu vực có nguy cơ bất ổn định.",
+            "C. Ưu tiên hoàn toàn vào việc cắt giảm ngân sách quốc phòng để tập trung phát triển kinh tế trong nước.",
+            "D. Thành lập các liên minh quân sự mới để bao vây các quốc gia đối lập."
+          ],
+          "correct": 1,
+          "explanation": "Bài học mô tả: 'Chiến lược quốc phòng của Mỹ là: Bên cạnh sử dụng quân sự còn phải phối hợp 'Sức mạnh mềm'; tự giúp phát triển kinh tế, chính trị, xã hội tại các khu vực có nguy cơ bất ổn định (Đây là điểm khác biệt so với trước đây; trước đây ưu tiên đánh phủ đầu đối phương).'"
+        },
+        {
+          "id": 8,
+          "question": "Các hình thức bạo loạn lật đổ chính được nêu trong bài học bao gồm những loại nào?",
+          "options": [
+            "A. Bạo loạn văn hóa, bạo loạn tư tưởng, bạo loạn tôn giáo.",
+            "B. Bạo loạn chính trị, bạo loạn vũ trang, bạo loạn chính trị kết hợp bạo loạn vũ trang.",
+            "C. Bạo loạn kinh tế, bạo loạn xã hội, bạo loạn môi trường.",
+            "D. Bạo loạn thông tin, bạo loạn an ninh mạng, bạo loạn truyền thông."
+          ],
+          "correct": 1,
+          "explanation": "Mục 'Hình thức bạo loạn' liệt kê: 'Bạo loạn chính trị, Bạo loạn vũ trang, BL chính trị kết hợp BL vũ trang'."
+        },
+        {
+          "id": 9,
+          "question": "Quá trình hoàn thiện chiến lược “Diễn biến hòa bình” và đạt được những 'thành công' ban đầu (như lật đổ các nước Đông Âu và Liên Xô) diễn ra chủ yếu trong giai đoạn nào?",
+          "options": [
+            "A. Giai đoạn sau Chiến tranh thế giới thứ 2 (1945-1950).",
+            "B. Giai đoạn 1950-1960 với các chiến lược ngăn chặn.",
+            "C. Giai đoạn 1980 đến nay, bắt đầu từ năm 1980.",
+            "D. Giai đoạn 1970-1980 với chiến lược 'Cây gậy và củ cà rốt'."
+          ],
+          "correct": 2,
+          "explanation": "Bài học chia thành hai giai đoạn: '1945 – 1980 (manh nha hình thành)' và '1980 đến nay (phát triển và hoàn thiện)'. Cụ thể hơn: '1980 hoàn thiện chiến lược “DBHB”, 1980 – 1990 lật đổ các nước Đông Âu và Liên Xô'."
+        },
+        {
+          "id": 10,
+          "question": "Mục tiêu cuối cùng của các thế lực thù địch khi thực hiện chiến lược “Diễn biến hòa bình” và bạo loạn lật đổ đối với cách mạng Việt Nam là gì?",
+          "options": [
+            "A. Thúc đẩy hợp tác kinh tế và giao lưu văn hóa giữa Việt Nam và các nước phương Tây.",
+            "B. Giúp Việt Nam cải thiện hệ thống chính trị và phát triển bền vững theo hướng hiện đại.",
+            "C. Lật đổ chế độ xã hội chủ nghĩa, xóa bỏ vai trò lãnh đạo của Đảng Cộng sản Việt Nam.",
+            "D. Khuyến khích Việt Nam tham gia các tổ chức quân sự quốc tế để đảm bảo an ninh khu vực."
+          ],
+          "correct": 2,
+          "explanation": "Các khái niệm về DBHB và BLLĐ đều nhấn mạnh mục đích 'lật đổ chế độ chính trị của các nước tiến bộ'. Đối với Việt Nam, điều này ám chỉ việc lật đổ chế độ XHCN và vai trò của Đảng Cộng sản."
+        }
+      ],
+      "num_questions": 10,
+      "user_answers": null,
+      "score": null,
+      "submitted": false
+    },
+    {
+      "id": 4,
+      "course_code": "test1",
+      "course_name": "python",
+      "upload_time": "2026-01-10 01:57:00",
+      "summary": "Bài học \"Phòng chống chiến lược 'diễn biến hòa bình', bạo loạn lật đổ của các thế lực thù địch đối với cách mạng Việt Nam\" tập trung vào việc trang bị kiến thức cơ bản về âm mưu, thủ đoạn của các thế lực thù địch, đồng thời nâng cao tinh thần cảnh giác cách mạng. Nội dung chính xoay quanh việc phân tích chiến lược \"diễn biến hòa bình\" (DBHB) và \"bạo loạn lật đổ\" (BLLĐ), quá trình hình thành, phát triển của chúng, cũng như các giải pháp phòng chống của Đảng và Nhà nước Việt Nam.\n\nKhái niệm quan trọng được làm rõ là \"Diễn biến hòa bình\", định nghĩa đây là chiến lược cơ bản của chủ nghĩa đế quốc và các thế lực phản động, sử dụng biện pháp phi quân sự nhằm lật đổ chế độ chính trị của các nước tiến bộ. Chiến lược này có hai giai đoạn hình thành và phát triển chính: giai đoạn manh nha từ 1945-1980 và giai đoạn phát triển, hoàn thiện từ 1980 đến nay. Trong giai đoạn đầu, các tổng thống Mỹ như John F. Kennedy với \"Chiến lược phản ứng linh hoạt\" đã hình thành tư tưởng \"cứng rắn bằng sức mạnh quân sự, mềm dẻo bằng các biện pháp hòa bình\"; Richard Nixon với \"Răn đe thực tế\" và \"Cây gậy và củ cà rốt\" đã chú trọng thẩm thấu tư tưởng, văn hóa và phá hoại từ bên trong. Giai đoạn sau 1980, chiến lược DBHB được hoàn thiện và thực hiện thành công ở Đông Âu, Liên Xô. Các tổng thống như Ronald Reagan với \"Học thuyết xung đột cường độ thấp\", George H.W. Bush với \"Vượt trên ngăn chặn\" (linh hồn là DBHB), và gần đây là Barack Obama với việc phối hợp \"sức mạnh mềm\" bên cạnh quân sự, đều thể hiện sự tiến hóa của chiến lược này.\n\nBên cạnh DBHB, bài học cũng làm rõ khái niệm \"Bạo loạn lật đổ\" là hành động chống phá bằng bạo lực do các lực lượng phản động, ly khai, đối lập thực hiện, nhằm gây rối loạn an ninh, trật tự hoặc lật đổ chế độ. Bạo loạn lật đổ có thể diễn ra dưới nhiều hình thức (chính trị, vũ trang, hoặc kết hợp) và quy mô (từ nhỏ đến lớn, tập trung vào các trung tâm kinh tế, chính trị, văn hóa), thường được xem là một thủ đoạn gắn liền với chiến lược DBHB.\n\nKiến thức cốt lõi nhấn mạnh rằng chiến lược DBHB và BLLĐ là những âm mưu thâm độc, nguy hiểm, luôn tồn tại và phát triển. Đảng ta, tại Hội nghị giữa nhiệm kỳ Khóa VII (01/1994), đã xác định \"diễn biến hòa bình\" là một trong bốn nguy cơ lớn đối với cách mạng Việt Nam, bên cạnh chệch hướng xã hội chủ nghĩa, tụt hậu về kinh tế và tham nhũng. Điều này cho thấy tính chất nghiêm trọng và lâu dài của cuộc đấu tranh phòng chống.\n\nỨng dụng thực tế của bài học là nâng cao ý thức cảnh giác cách mạng cho mỗi cá nhân và toàn xã hội. Việc nắm vững âm mưu, thủ đoạn của kẻ thù giúp mỗi công dân, đặc biệt là thế hệ trẻ, nhận diện được các biểu hiện của DBHB, BLLĐ trong đời sống hàng ngày, trên không gian mạng và các lĩnh vực khác. Từ đó, mỗi người có thể chủ động góp phần vào công cuộc phòng chống, bảo vệ Đảng, bảo vệ Nhà nước, bảo vệ chế độ xã hội chủ nghĩa và giữ vững an ninh quốc gia, trật tự an toàn xã hội.",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Chiến lược \"Diễn biến hòa bình\" được định nghĩa là gì?",
+          "options": [
+            "A. Chiến lược quân sự nhằm đánh chiếm các quốc gia tiến bộ.",
+            "B. Chiến lược cơ bản của chủ nghĩa đế quốc và các thế lực phản động, sử dụng biện pháp phi quân sự để lật đổ chế độ chính trị.",
+            "C. Phương pháp hòa bình để thúc đẩy hợp tác quốc tế giữa các nước có chế độ chính trị khác nhau.",
+            "D. Chiến lược ngoại giao nhằm giải quyết xung đột bằng đối thoại, không sử dụng vũ lực."
+          ],
+          "correct": 1,
+          "explanation": "Theo bài học, \"Diễn biến hòa bình\" là chiến lược cơ bản của chủ nghĩa đế quốc và các thế lực phản động, sử dụng biện pháp phi quân sự để lật đổ chế độ chính trị của các nước tiến bộ."
+        },
+        {
+          "id": 2,
+          "question": "Chiến lược \"Diễn biến hòa bình\" được hình thành và phát triển qua mấy giai đoạn chính?",
+          "options": [
+            "A. Một giai đoạn, từ 1980 đến nay.",
+            "B. Hai giai đoạn: 1945-1980 và 1980 đến nay.",
+            "C. Ba giai đoạn, từ sau Chiến tranh thế giới thứ nhất.",
+            "D. Bốn giai đoạn, bắt đầu từ thời kỳ Chiến tranh Lạnh."
+          ],
+          "correct": 1,
+          "explanation": "Bài học nêu rõ \"Diễn biến hòa bình\" có hai giai đoạn hình thành và phát triển: 1945-1980 (manh nha hình thành) và 1980 đến nay (phát triển và hoàn thiện)."
+        },
+        {
+          "id": 3,
+          "question": "Tổng thống Mỹ nào đã đưa ra chiến lược \"Phản ứng linh hoạt\" vào tháng 01/1961, đồng thời hình thành tên gọi \"Diễn biến hòa bình\" với chủ trương \"cứng rắn bằng sức mạnh quân sự, mềm dẻo bằng các biện pháp hòa bình\"?",
+          "options": [
+            "A. Richard Nixon",
+            "B. John F. Kennedy",
+            "C. Ronald Reagan",
+            "D. George H.W. Bush"
+          ],
+          "correct": 1,
+          "explanation": "John F. Kennedy là tổng thống đã nhậm chức vào tháng 01/1961 và đưa ra \"Chiến lược phản ứng linh hoạt\" với chủ trương được xem là nền tảng hình thành tên gọi \"Diễn biến hòa bình\"."
+        },
+        {
+          "id": 4,
+          "question": "Chiến lược \"Cây gậy và củ cà rốt\" được Tổng thống Mỹ nào đưa ra vào năm 1970 nhằm thực hiện \"Diễn biến hòa bình\"?",
+          "options": [
+            "A. John F. Kennedy",
+            "B. Ronald Reagan",
+            "C. Richard Nixon",
+            "D. Barack Obama"
+          ],
+          "correct": 2,
+          "explanation": "Năm 1970, Tổng thống Richard Nixon đã đưa ra chiến lược \"Cây gậy và củ cà rốt\" để thực hiện \"Diễn biến hòa bình\", coi trọng răn đe hạt nhân và thẩm thấu tư tưởng, văn hóa."
+        },
+        {
+          "id": 5,
+          "question": "Hội nghị giữa nhiệm kỳ Khóa VII (tháng 01/1994) của Đảng ta đã xác định \"Diễn biến hòa bình\" là một trong mấy nguy cơ?",
+          "options": [
+            "A. 2 nguy cơ",
+            "B. 3 nguy cơ",
+            "C. 4 nguy cơ",
+            "D. 5 nguy cơ"
+          ],
+          "correct": 2,
+          "explanation": "Tại Hội nghị giữa nhiệm kỳ Khóa VII (tháng 01/1994), Đảng ta đã dùng cụm từ 4 nguy cơ, trong đó có \"Diễn biến hòa bình\"."
+        },
+        {
+          "id": 6,
+          "question": "\"Bạo loạn lật đổ\" được hiểu là gì?",
+          "options": [
+            "A. Một cuộc biểu tình hòa bình của người dân.",
+            "B. Hành động chống phá bằng bạo lực do lực lượng phản động, ly khai, đối lập thực hiện nhằm gây rối loạn an ninh, trật tự hoặc lật đổ chế độ.",
+            "C. Cuộc đảo chính quân sự của một quốc gia láng giềng.",
+            "D. Một chiến dịch tuyên truyền trên mạng xã hội."
+          ],
+          "correct": 1,
+          "explanation": "Bài học định nghĩa \"Bạo loạn lật đổ\" là hành động chống phá bằng bạo lực do lực lượng phản động, ly khai, đối lập thực hiện với mục đích gây rối loạn an ninh, trật tự hoặc lật đổ chế độ."
+        },
+        {
+          "id": 7,
+          "question": "Điểm khác biệt trong chiến lược quốc phòng của Mỹ dưới thời Tổng thống Barack Obama so với trước đây là gì?",
+          "options": [
+            "A. Chỉ tập trung vào sức mạnh quân sự và đánh phủ đầu đối phương.",
+            "B. Tăng cường răn đe hạt nhân và giảm thiểu can thiệp vào các nước tiến bộ.",
+            "C. Phối hợp \"Sức mạnh mềm\" bên cạnh sử dụng quân sự, tự giúp phát triển kinh tế, chính trị, xã hội tại các khu vực có nguy cơ bất ổn định.",
+            "D. Hoàn toàn từ bỏ chiến lược \"Diễn biến hòa bình\"."
+          ],
+          "correct": 2,
+          "explanation": "Chiến lược của Obama nhấn mạnh việc phối hợp \"Sức mạnh mềm\" và tự giúp phát triển kinh tế, chính trị, xã hội tại các khu vực bất ổn, đây là điểm khác biệt so với trước đây thường ưu tiên đánh phủ đầu."
+        },
+        {
+          "id": 8,
+          "question": "Tổng thống Mỹ nào đã tuyên bố kết thúc chiến lược \"Ngăn chặn\" và chuyển sang chiến lược \"Vượt trên ngăn chặn\", trong đó \"linh hồn\" là \"Diễn biến hòa bình\"?",
+          "options": [
+            "A. Ronald Reagan",
+            "B. John F. Kennedy",
+            "C. George H.W. Bush",
+            "D. Barack Obama"
+          ],
+          "correct": 2,
+          "explanation": "Tháng 5/1989, Tổng thống George H.W. Bush đã tuyên bố kết thúc chiến lược \"Ngăn chặn\" và chuyển sang \"Vượt trên ngăn chặn\", với linh hồn là \"Diễn biến hòa bình\"."
+        },
+        {
+          "id": 9,
+          "question": "Những hình thức \"Bạo loạn lật đổ\" được nêu trong bài học là gì?",
+          "options": [
+            "A. Bạo loạn kinh tế, bạo loạn văn hóa.",
+            "B. Bạo loạn chính trị, bạo loạn vũ trang, bạo loạn chính trị kết hợp bạo loạn vũ trang.",
+            "C. Bạo loạn xã hội, bạo loạn công nghệ.",
+            "D. Bạo loạn tôn giáo, bạo loạn dân tộc."
+          ],
+          "correct": 1,
+          "explanation": "Bài học liệt kê các hình thức bạo loạn lật đổ bao gồm: Bạo loạn chính trị, Bạo loạn vũ trang và Bạo loạn chính trị kết hợp Bạo loạn vũ trang."
+        },
+        {
+          "id": 10,
+          "question": "Mục tiêu chính của việc nắm vững kiến thức về chiến lược \"Diễn biến hòa bình\", bạo loạn lật đổ là gì?",
+          "options": [
+            "A. Chuẩn bị cho các cuộc xung đột quân sự quy mô lớn.",
+            "B. Nâng cao tinh thần cảnh giác cách mạng, góp phần làm thất bại âm mưu chống phá của kẻ thù.",
+            "C. Học hỏi cách thức tổ chức bạo loạn lật đổ ở các nước khác.",
+            "D. Nghiên cứu lịch sử các cuộc cách mạng trên thế giới."
+          ],
+          "correct": 1,
+          "explanation": "Mục tiêu học phần đã nêu rõ việc nắm kiến thức này nhằm \"Nâng cao tinh thần cảnh giác cách mạng, góp phần làm thất bại âm mưu chống phá của kẻ thù\"."
+        }
+      ],
+      "num_questions": 10,
+      "user_answers": null,
+      "score": null,
+      "submitted": false
+    }
+  ]
+}

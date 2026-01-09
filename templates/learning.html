@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Learning Assistant</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #fff5f5 0%, #ffe5e5 50%, #fff0f0 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: white;
+            padding: 20px 30px;
+            border-radius: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 30px rgba(255, 107, 107, 0.12);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid rgba(255, 107, 107, 0.1);
+        }
+
+        .header h1 {
+            color: #ff6b6b;
+            font-size: 1.8em;
+        }
+
+        .btn-back {
+            padding: 10px 20px;
+            background: linear-gradient(135deg, #ff6b6b, #ee5a6f);
+            color: white;
+            text-decoration: none;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+        }
+
+        .btn-back:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
+        }
+
+        .section {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 8px 30px rgba(255, 107, 107, 0.08);
+            border: 1px solid rgba(255, 107, 107, 0.1);
+        }
+
+        .section h2 {
+            color: #ff6b6b;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+            border-bottom: 2px solid #ff6b6b;
+            padding-bottom: 10px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="file"] {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ffe5e5;
+            border-radius: 12px;
+            font-size: 1em;
+            transition: border 0.3s;
+        }
+
+        .form-group input[type="text"]:focus,
+        .form-group input[type="file"]:focus {
+            outline: none;
+            border-color: #ff6b6b;
+        }
+
+        .form-group input[type="file"] {
+            padding: 10px;
+        }
+
+        .slider-container {
+            margin-top: 10px;
+        }
+
+        .slider-container input[type="range"] {
+            width: 100%;
+            margin: 10px 0;
+            height: 8px;
+            background: linear-gradient(to right, #ff6b6b, #ffc0cb);
+            border-radius: 5px;
+            outline: none;
+        }
+
+        .slider-container input[type="range"]::-webkit-slider-thumb {
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            background: #ff6b6b;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .slider-value {
+            text-align: center;
+            font-size: 1.5em;
+            color: #ff6b6b;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+
+        .btn-primary {
+            padding: 12px 30px;
+            background: linear-gradient(135deg, #ff6b6b, #ee5a6f);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
+        }
+
+        .btn-primary:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .loading.active {
+            display: block;
+        }
+
+        .spinner {
+            border: 4px solid #ffe5e5;
+            border-top: 4px solid #ff6b6b;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 15px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .summary-box {
+            background: #fff5f5;
+            padding: 20px;
+            border-radius: 12px;
+            line-height: 1.8;
+            color: #333;
+            border-left: 4px solid #ff6b6b;
+        }
+
+        .question-card {
+            background: #fff5f5;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            border-left: 4px solid #ff6b6b;
+        }
+
+        .question-card h3 {
+            color: #333;
+            margin-bottom: 15px;
+            line-height: 1.5;
+            word-wrap: break-word;
+        }
+
+        .option {
+            padding: 12px;
+            margin: 8px 0;
+            background: white;
+            border: 2px solid #ffe5e5;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            line-height: 1.6;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+
+        .option:hover {
+            border-color: #ff6b6b;
+            background: #fff5f5;
+        }
+
+        .option input[type="radio"] {
+            margin-top: 4px;
+            flex-shrink: 0;
+            accent-color: #ff6b6b;
+            width: 18px;
+            height: 18px;
+        }
+
+        .option-text {
+            flex: 1;
+            word-break: break-word;
+        }
+
+        .option.correct {
+            border-color: #ff9a9e;
+            background: #ffd0d0;
+        }
+
+        .option.incorrect {
+            border-color: #ff6b6b;
+            background: #ffe5e5;
+        }
+
+        .result-box {
+            background: linear-gradient(135deg, #ff6b6b, #ee5a6f);
+            color: white;
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+            box-shadow: 0 8px 30px rgba(255, 107, 107, 0.3);
+        }
+
+        .result-box h2 {
+            color: white;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .result-box p {
+            font-size: 1.2em;
+            margin: 5px 0;
+        }
+
+        .explanation {
+            margin-top: 10px;
+            padding: 10px;
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            border-radius: 8px;
+            font-size: 0.95em;
+            line-height: 1.6;
+        }
+
+        .alert {
+            padding: 15px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+
+        .alert-success {
+            background: #ffd0d0;
+            color: #721c24;
+            border-left: 4px solid #ff9a9e;
+        }
+
+        .alert-error {
+            background: #ffe5e5;
+            color: #721c24;
+            border-left: 4px solid #ff6b6b;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .header h1 {
+                margin-bottom: 15px;
+                font-size: 1.4em;
+            }
+
+            .section {
+                padding: 20px;
+            }
+
+            .question-card h3 {
+                font-size: 1em;
+            }
+
+            .option {
+                padding: 10px;
+                font-size: 0.95em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Cam 10 tú-AI</h1>
+            <a href="/" class="btn-back">← Về trang chủ</a>
+        </div>
+
+        <!-- Alert Messages -->
+        <div id="alertBox" class="hidden"></div>
+
+        <!-- Section 1: Upload PDF -->
+        <div class="section" id="uploadSection">
+            <h2>Upload tài liệu học tập</h2>
+            <form id="uploadForm">
+                <div class="form-group">
+                    <label for="courseCode">Mã môn học:</label>
+                    <input type="text" id="courseCode" placeholder="VD: COS120" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="courseName">Tên môn học:</label>
+                    <input type="text" id="courseName" placeholder="VD: Cấu trúc dữ liệu và giải thuật" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="pdfFile">Chọn file PDF:</label>
+                    <input type="file" id="pdfFile" accept=".pdf" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Số câu hỏi muốn tạo: <span class="slider-value" id="numQuestionsValue">10</span></label>
+                    <div class="slider-container">
+                        <input type="range" id="numQuestions" min="5" max="20" value="10">
+                        <div style="display: flex; justify-content: space-between; font-size: 0.9em; color: #666;">
+                            <span>5 câu</span>
+                            <span>20 câu</span>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-primary" id="uploadBtn">
+                    Tạo bài test với AI
+                </button>
+            </form>
+
+            <div class="loading" id="loadingBox">
+                <div class="spinner"></div>
+                <p>Đang xử lý PDF bằng Gemini AI...</p>
+                <p style="font-size: 0.9em; color: #666;">Có thể mất 10-30 giây</p>
+            </div>
+        </div>
+
+        <!-- Section 2: Tóm tắt nội dung -->
+        <div class="section hidden" id="summarySection">
+            <h2>Tóm tắt nội dung</h2>
+            <div class="summary-box" id="summaryContent"></div>
+        </div>
+
+        <!-- Section 3: Bài test -->
+        <div class="section hidden" id="testSection">
+            <h2>Bài kiểm tra trắc nghiệm</h2>
+            <div id="questionsContainer"></div>
+            <button class="btn-primary" id="submitTestBtn">Nộp bài</button>
+        </div>
+
+        <!-- Section 4: Kết quả -->
+        <div class="section hidden" id="resultSection">
+            <div class="result-box">
+                <h2 id="scoreDisplay">0/10</h2>
+                <p id="scoreText">Điểm số: 0</p>
+                <p id="percentageText">Tỷ lệ đúng: 0%</p>
+            </div>
+            <h2 style="color: #ff6b6b; margin-bottom: 20px;">Chi tiết từng câu</h2>
+            <div id="detailsContainer"></div>
+            <div style="text-align: center; margin-top: 20px;">
+                <a href="/learning-stats" class="btn-primary" style="display: inline-block; text-decoration: none;">
+                    Xem thống kê
+                </a>
+                <button class="btn-primary" onclick="location.reload()" style="margin-left: 10px;">
+                    Làm bài mới
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentSession = null;
+
+        // Update slider value
+        document.getElementById('numQuestions').addEventListener('input', function() {
+            document.getElementById('numQuestionsValue').textContent = this.value;
+        });
+
+        // Show alert
+        function showAlert(message, type) {
+            const alertBox = document.getElementById('alertBox');
+            alertBox.className = `alert alert-${type}`;
+            alertBox.textContent = message;
+            alertBox.classList.remove('hidden');
+            setTimeout(() => alertBox.classList.add('hidden'), 5000);
+        }
+
+        // Upload form submit
+        document.getElementById('uploadForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+
+            const formData = new FormData();
+            formData.append('pdf_file', document.getElementById('pdfFile').files[0]);
+            formData.append('course_code', document.getElementById('courseCode').value);
+            formData.append('course_name', document.getElementById('courseName').value);
+            formData.append('num_questions', document.getElementById('numQuestions').value);
+
+            // Show loading
+            document.getElementById('uploadBtn').disabled = true;
+            document.getElementById('loadingBox').classList.add('active');
+
+            try {
+                const response = await fetch('/api/upload-pdf', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const result = await response.json();
+
+                if (result.success) {
+                    currentSession = result.session;
+                    displaySummary(result.session.summary);
+                    displayQuestions(result.session.questions);
+                    showAlert('Xử lý thành công! Hãy làm bài test bên dưới.', 'success');
+                } else {
+                    showAlert('Lỗi: ' + result.message, 'error');
+                }
+            } catch (error) {
+                showAlert('Lỗi kết nối: ' + error.message, 'error');
+            } finally {
+                document.getElementById('uploadBtn').disabled = false;
+                document.getElementById('loadingBox').classList.remove('active');
+            }
+        });
+
+        // Display summary
+        function displaySummary(summary) {
+            document.getElementById('summaryContent').textContent = summary;
+            document.getElementById('summarySection').classList.remove('hidden');
+        }
+
+        // Display questions
+        function displayQuestions(questions) {
+            const container = document.getElementById('questionsContainer');
+            container.innerHTML = '';
+
+            questions.forEach((q, index) => {
+                const card = document.createElement('div');
+                card.className = 'question-card';
+                card.innerHTML = `
+                    <h3>Câu ${q.id}: ${q.question}</h3>
+                    ${q.options.map((opt, i) => `
+                        <label class="option">
+                            <input type="radio" name="question_${q.id}" value="${i}">
+                            <span class="option-text">${opt}</span>
+                        </label>
+                    `).join('')}
+                `;
+                container.appendChild(card);
+            });
+
+            document.getElementById('testSection').classList.remove('hidden');
+        }
+
+        // Submit test
+        document.getElementById('submitTestBtn').addEventListener('click', async function() {
+            if (!currentSession) return;
+
+            const answers = [];
+            currentSession.questions.forEach(q => {
+                const selected = document.querySelector(`input[name="question_${q.id}"]:checked`);
+                answers.push(selected ? parseInt(selected.value) : -1);
+            });
+
+            // Check if all answered
+            if (answers.includes(-1)) {
+                showAlert('Vui lòng trả lời tất cả các câu hỏi!', 'error');
+                return;
+            }
+
+            this.disabled = true;
+
+            try {
+                const response = await fetch('/api/submit-test', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({
+                        session_id: currentSession.id,
+                        answers: answers
+                    })
+                });
+
+                const result = await response.json();
+
+                if (result.success) {
+                    displayResults(result);
+                } else {
+                    showAlert('Lỗi: ' + result.message, 'error');
+                }
+            } catch (error) {
+                showAlert('Lỗi kết nối: ' + error.message, 'error');
+            }
+        });
+
+        // Display results
+        function displayResults(result) {
+            // Update score display
+            document.getElementById('scoreDisplay').textContent = 
+                `${result.correct_count}/${result.total_questions}`;
+            document.getElementById('scoreText').textContent = 
+                `Điểm số: ${result.score}/10`;
+            document.getElementById('percentageText').textContent = 
+                `Tỷ lệ đúng: ${result.percentage}%`;
+
+            // Display details
+            const detailsContainer = document.getElementById('detailsContainer');
+            detailsContainer.innerHTML = '';
+
+            result.results.forEach((res, index) => {
+                const question = currentSession.questions[index];
+                const card = document.createElement('div');
+                card.className = 'question-card';
+                
+                let statusIcon = res.is_correct ? '✅' : '❌';
+                
+                card.innerHTML = `
+                    <h3>${statusIcon} Câu ${question.id}: ${question.question}</h3>
+                    ${question.options.map((opt, i) => {
+                        let optClass = '';
+                        if (i === res.correct_answer) optClass = 'correct';
+                        else if (i === res.user_answer && !res.is_correct) optClass = 'incorrect';
+                        
+                        return `<div class="option ${optClass}"><span class="option-text">${opt}</span></div>`;
+                    }).join('')}
+                    ${res.explanation ? `
+                        <div class="explanation">
+                            <strong>💡 Giải thích:</strong> ${res.explanation}
+                        </div>
+                    ` : ''}
+                `;
+                detailsContainer.appendChild(card);
+            });
+
+            // Hide test, show results
+            document.getElementById('testSection').classList.add('hidden');
+            document.getElementById('resultSection').classList.remove('hidden');
+
+            // Scroll to results
+            document.getElementById('resultSection').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
